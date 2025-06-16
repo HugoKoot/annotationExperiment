@@ -89,14 +89,23 @@ def get_gemini_summary(chat_log_content, system_prompt):
 
 def process_chat_log(file_path):
     """
-    Reads a chat log, formats it, gets a summary, and saves it.
+    Reads a chat log, and if summary.json exists, creates summary2.json.
     """
-    summary_path = os.path.join(os.path.dirname(file_path), "summary.json")
-    if os.path.exists(summary_path):
-        logging.info(f"Summary already exists for {file_path}, skipping.")
+    log_dir = os.path.dirname(file_path)
+    original_summary_path = os.path.join(log_dir, "summary.json")
+    new_summary_path = os.path.join(log_dir, "summary2.json")
+
+    # This is the new logic: only run if summary.json exists.
+    if not os.path.exists(original_summary_path):
+        logging.info(f"No summary.json found in {log_dir}, skipping.")
         return
 
-    logging.info(f"Processing {file_path}...")
+    # Also, don't re-run if we've already created summary2.json
+    if os.path.exists(new_summary_path):
+        logging.info(f"{new_summary_path} already exists, skipping.")
+        return
+
+    logging.info(f"Processing {file_path} to create {new_summary_path}...")
 
     try:
         with open(file_path, 'r') as f:
@@ -121,9 +130,9 @@ def process_chat_log(file_path):
             try:
                 # The API response should be a JSON string, so we parse it
                 summary_data = json.loads(summary_text)
-                with open(summary_path, 'w') as f:
+                with open(new_summary_path, 'w') as f:
                     json.dump(summary_data, f, indent=2)
-                logging.info(f"Successfully created summary for {file_path}")
+                logging.info(f"Successfully created {new_summary_path}")
             except json.JSONDecodeError:
                 logging.error(f"Failed to decode JSON from Gemini API response for {file_path}. Response was:\n{summary_text}")
 

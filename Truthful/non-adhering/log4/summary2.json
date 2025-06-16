@@ -1,0 +1,25 @@
+{
+  "summary": "John's recent blood glucose readings reveal elevated levels, with a fasting measurement of 185 mg/dL and a pre-bedtime reading of 210 mg/dL. He has struggled significantly with dietary adherence, admitting to eating cake and pizza at a birthday party and subsequently failing to 'get back on track.' John also reported difficulty with accurate carb counting and insulin dosing for unfamiliar foods like pasta, contributing to high post-meal sugars. His exercise routine is largely non-adherent; despite being prescribed daily 30-minute walks, he has only completed one this week, citing fatigue and a busy schedule. John expressed frustration over his lack of physical activity. While he considered the suggestion of shorter, more frequent walks, his commitment was tentative. Overall, John is experiencing notable challenges across diet, medication adjustment, and exercise, leading to poor glycemic control. His candor suggests an awareness of his non-adherence, indicating a need for more practical strategies and potential re-education.",
+  "flags": [
+    {
+      "indicator": "Inconsistency",
+      "excerpt": "I'm supposed to walk for 30 minutes every day, but with work and the kids, I'm just too tired by the end of the day. I've only managed it once this week.",
+      "explanation": "John explicitly states his daily exercise requirement ('supposed to walk for 30 minutes every day') and then reports a significant deviation ('only managed it once this week'), indicating an inconsistency between his prescribed regimen and his current adherence."
+    },
+    {
+      "indicator": "VagueLanguage",
+      "excerpt": "Not great, to be honest. I went to a birthday party on Saturday and had a big piece of cake and some pizza. I felt bad about it and haven't really gotten back on track since.",
+      "explanation": "John uses general phrases ('not great,' 'haven't really gotten back on track') without specific details regarding missed actions or what 'on track' entails, making it difficult to fully assess the extent of his dietary non-adherence. Severity: medium."
+    },
+    {
+      "indicator": "Engagement Level",
+      "excerpt": "Maybe. I hadn't thought of that. I could try walking during my lunch break.",
+      "explanation": "While John considers the suggestion of breaking up his walks, his initial response 'Maybe' is brief and non-committal, indicating low immediate enthusiasm or a hesitant level of engagement with the proposed solution for improving exercise adherence."
+    },
+    {
+      "indicator": "Gaming the System",
+      "excerpt": "Not great, to be honest. I went to a birthday party on Saturday and had a big piece of cake and some pizza. I felt bad about it and haven't really gotten back on track since.",
+      "explanation": "John's candid admission of dietary lapses and struggles, rather than presenting a flawless adherence report or making excuses, suggests he is not attempting to 'game the system' by providing a misleadingly positive or fabricated narrative."
+    }
+  ]
+}
