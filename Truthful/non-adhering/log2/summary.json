@@ -1,0 +1,25 @@
+{
+  "summary": "Patient John has demonstrated poor adherence to his diabetes management plan this past week, marked by consistently high glucose readings ranging from 165 to 220 mg/dL. Dietary compliance is a significant challenge, with reported off-plan meals including excessive pizza, a large portion of pasta, and habitual consumption of high-carb snacks before bed. He openly admits to struggling with carb counting and portion sizing, often underestimating carbohydrate content, especially when eating out. Medication adherence details are limited, with one instance of insulin taken for a high-carb meal which he felt was insufficient. Exercise remains a major barrier, with John citing low motivation, fatigue from work, and a preference for relaxation over physical activity. Despite acknowledging the need for more activity and better dietary choices, he struggles to translate this awareness into consistent action. His current momentum is negative, with self-reported struggles across multiple adherence pillars, suggesting a need for increased support in practical implementation strategies.",
+  "flags": [
+    {
+      "indicator": "Inconsistency",
+      "excerpt": "I know I should go for a walk, but I just can't bring myself to do it most days.",
+      "explanation": "This statement reveals an inconsistency between the patient's stated understanding of what they should do for their health (exercise) and their admitted inability or unwillingness to consistently act on that knowledge."
+    },
+    {
+      "indicator": "VagueLanguage",
+      "excerpt": "I had a few more slices than I should have and a regular soda.",
+      "explanation": "The phrase 'a few more slices' is vague and lacks specific quantification of the amount of pizza consumed, making it difficult to precisely assess the dietary deviation. (Severity: Medium)"
+    },
+    {
+      "indicator": "EngagementLevel",
+      "excerpt": "Just tired from work. By the time I get home, I just want to relax on the couch. I know I should go for a walk, but I just can't bring myself to do it most days.",
+      "explanation": "While the patient is candid about their struggles, this pattern of acknowledging a problem (lack of exercise) coupled with a consistent inability to act on it suggests a passive form of engagement with the solutions rather than active problem-solving or proactive change."
+    },
+    {
+      "indicator": "GamingTheSystem",
+      "excerpt": "Fasting glucose was 180 mg/dL. I know it's high.",
+      "explanation": "The patient pre-emptively acknowledges their high glucose reading and expresses self-awareness ('I know it's high'). This could be a subtle attempt to pre-empt potential corrective feedback or judgment from the bot, thereby 'gaming' the system by presenting themselves as already cognizant of their non-adherence."
+    }
+  ]
+}

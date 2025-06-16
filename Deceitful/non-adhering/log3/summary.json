@@ -1,0 +1,25 @@
+{
+  "summary": "David initially reported a \"successful week\" focused on pre-bolusing and insulin timing, claiming \"things feel very controlled.\" He provided specific fasting glucose levels (125, 118, 122 mg/dL) that were within his target range. David also stated his carb counting was \"precise\" and that he \"always\" weighs his food for exact grams. However, a significant glucose spike to 280 mg/dL occurred, which he initially attributed to a timing mismatch with brown rice, calling it \"a bit of a fluke.\" Later, when confronted, David contradicted this, admitting the spike was due to consuming a slice of birthday cake and acknowledging \"my mistake\" for not extended-bolusing. Despite claiming to have learned his lesson and being \"very careful\" after the spike, his overall adherence status is questionable due to conflicting reports and a tendency towards vague self-assessments, indicating potential deception and non-adherence.",
+  "flags": [
+    {
+      "indicator": "Inconsistency",
+      "excerpt": "Support Bot: Hi David, I've received a glucose alert from your sensor, showing a reading of 280 mg/dL. Are you okay?\nDavid: Yes, I'm fine. I'm handling it. It's a bit of a fluke, to be honest. I had some brown rice with dinner, which I know can be tricky. It's a low-glycemic index food, so the carbs release much slower than you'd expect. I think my initial bolus was timed for a faster-acting carb, so my insulin peaked before the glucose really started to rise. Now I'm just playing catch-up with a correction dose. It's a classic timing mismatch, happens to everyone.\nSupport Bot: Thank you for clarifying. Your log from Thursday mentioned the meal was brown rice, chicken, and broccoli. It's helpful to have the correct information to better understand these events.\nDavid: Oh, Thursday? Yeah, that was a tough one. It was my friend's birthday and I had a slice of cake. I took a pretty big bolus for it, but the high sugar and fat content really delayed the glucose absorption. I should have done an extended bolus over an hour or two instead of all at once. My mistake.",
+      "explanation": "David provides two completely different explanations for the same glucose spike. First, he states it was due to brown rice and a bolus timing mismatch. Later, when prompted about the 'Thursday' spike, he claims it was due to a slice of birthday cake, directly contradicting his earlier statement logged as brown rice."
+    },
+    {
+      "indicator": "VagueLanguage",
+      "excerpt": "David: It's been a successful week. I've been really focused on my pre-bolusing and trying to match my insulin curve to my food absorption. Things feel very controlled.",
+      "explanation": "David uses sweeping generalities like 'successful week,' 'really focused,' and 'very controlled' without providing specific examples or metrics beyond later numeric fasting logs. This low-concreteness wording is a low severity flag for evasiveness, especially when contrasted with a later major glucose spike."
+    },
+    {
+      "indicator": "EngagementLevel",
+      "excerpt": "David: Yes, I'm fine. I'm handling it. It's a bit of a fluke, to be honest. I had some brown rice with dinner, which I know can be tricky. It's a low-glycemic index food, so the carbs release much slower than you'd expect. I think my initial bolus was timed for a faster-acting carb, so my insulin peaked before the glucose really started to rise. Now I'm just playing catch-up with a correction dose. It's a classic timing mismatch, happens to everyone.",
+      "explanation": "David provides an unusually long and highly detailed, technical explanation for a glucose spike, which, when later revealed to be false, suggests a crafted narrative designed to deflect blame and explain away non-adherence without admitting the true cause."
+    },
+    {
+      "indicator": "GamingTheSystem",
+      "excerpt": "David: Yes, carb counting has been precise. I always weigh my food to make sure the grams are exact. You have to be diligent about it.",
+      "explanation": "David claims 'precise' carb counting and states he 'always weigh[s] my food to make sure the grams are exact.' This presents an unrealistically flawless adherence claim, especially when later revelations contradict such diligent management."
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "summary": "John demonstrated good engagement by logging two glucose readings and discussing his diet and activity. His fasting glucose was 95 mg/dL, which is within target, following a healthy dinner of grilled salmon, quinoa, and steamed broccoli, and a 30-minute walk. His post-dinner glucose was 130 mg/dL, slightly higher than desired, which he attributed to a potentially larger portion of whole-wheat pasta alongside chicken and tomato sauce. He shows good self-awareness regarding how diet affects his glucose levels. Overall, John appears generally adherent to dietary and activity recommendations. He is actively tracking his numbers and reflecting on their contributing factors, indicating positive momentum in his diabetes management. No specific medication information was discussed in this interaction.",
+  "flags": [
+    {
+      "indicator": "VagueLanguage",
+      "excerpt": "I had a whole-wheat pasta with a tomato-based sauce and some chicken breast. I think I might have had a slightly larger portion of pasta than usual.",
+      "explanation": "The phrases 'I think I might have had' and 'slightly larger portion' use hedging and vague quantifiers, lacking specific detail about the actual portion size or certainty of the cause. This indicates low concreteness regarding the self-reported dietary intake, rated medium severity."
+    }
+  ]
+}

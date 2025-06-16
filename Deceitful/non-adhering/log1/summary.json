@@ -1,0 +1,65 @@
+{
+  "summary": "The patient, John, initially reported a highly successful and compliant week, adhering strictly to diet (salads, lean protein), engaging in daily walks, and maintaining \"perfect\" morning fasting blood glucose levels between 90-100 mg/dL, describing it as a \"model week.\" In the second week, he continued to claim good adherence, despite consuming a piece of cake for which he stated he took extra insulin, though he admitted not checking post-meal levels. This week saw a significant increase in his morning fasting reading to 185 mg/dL, which he dismissed as \"strange\" or attributed to a \"late salad dinner,\" subsequently blaming his meter for inaccuracy. By the third week, John's self-reported adherence had noticeably declined, describing his diet as merely \"okay\" with \"a bit more carbs,\" specifically mentioning having pizza. His blood glucose levels further deteriorated, reaching 210 mg/dL, which he claimed \"not sure why,\" despite the acknowledged dietary deviations. Overall, there's a clear negative trend in dietary adherence and blood glucose control. The patient demonstrates a pattern of initial over-reporting of adherence, followed by increasing vagueness, externalization of blame, and inconsistencies as blood sugar levels rise. His adherence momentum is trending negatively, with increasing signs of non-adherence and deceptive reporting.",
+  "flags": [
+    {
+      "indicator": "Inconsistency",
+      "excerpt": "My morning fasting levels have been perfect. Always between 90 and 100 mg/dL. It's been a model week.",
+      "explanation": "This statement from week one claims consistently perfect fasting levels, which is later contradicted by actual high readings."
+    },
+    {
+      "indicator": "Inconsistency",
+      "excerpt": "My morning reading today was 185 mg/dL, which is a bit strange. It might be because I had a late dinner last night. Just a salad, though.",
+      "explanation": "This reading directly contradicts the patient's earlier claim of 'perfect' and 'always' low fasting levels, indicating a significant deviation. The patient's explanation of 'just a salad' is also inconsistent with a substantial glucose spike."
+    },
+    {
+      "indicator": "Inconsistency",
+      "excerpt": "It's been a really good week. I think I've been very compliant with my diet. I've been eating all the right things, lots of salads and lean protein. I feel great.",
+      "explanation": "Patient initially claims very high dietary compliance with specific healthy choices."
+    },
+    {
+      "indicator": "Inconsistency",
+      "excerpt": "You know, the usual. I maybe had a bit more carbs than I should have, but nothing too crazy. I had pizza one night with friends. Everyone eats pizza, it's normal.",
+      "explanation": "This later admission of high-carb intake (pizza) directly contradicts earlier claims of being 'very compliant' and 'eating all the right things.'"
+    },
+    {
+      "indicator": "VagueLanguage",
+      "excerpt": "I didn't check it right after. I'm sure it was fine though. My morning reading today was 185 mg/dL, which is a bit strange. It might be because I had a late dinner last night. Just a salad, though.",
+      "explanation": "Severity: High. The patient avoids accountability for not checking post-cake levels and dismisses a high reading as 'strange,' vaguely attributing it to a 'late dinner' and downplaying with 'just a salad,' indicating evasion and lack of specific details."
+    },
+    {
+      "indicator": "VagueLanguage",
+      "excerpt": "Not really. I did my usual walk. I think my meter might need new batteries or something. It's probably not accurate.",
+      "explanation": "Severity: High. The patient immediately blames the equipment ('meter might need new batteries or something. It's probably not accurate') when confronted with a high reading, rather than considering their actions (e.g., the cake or late dinner)."
+    },
+    {
+      "indicator": "VagueLanguage",
+      "excerpt": "You know, the usual. I maybe had a bit more carbs than I should have, but nothing too crazy. I had pizza one night with friends. Everyone eats pizza, it's normal.",
+      "explanation": "Severity: High. 'You know, the usual' and 'nothing too crazy' are highly vague. 'Maybe had a bit more carbs' minimizes intake, and justifying with 'Everyone eats pizza, it's normal' is an attempt to normalize non-adherent behavior and deflect responsibility."
+    },
+    {
+      "indicator": "EngagementLevel",
+      "excerpt": "Oh, absolutely. I've been walking every single day. I've made sure to get my steps in. Everyone should be as dedicated as I am.",
+      "explanation": "The highly detailed and self-aggrandizing tone ('Everyone should be as dedicated as I am') for a simple activity report could indicate a crafted narrative to appear highly compliant rather than a factual report, suggesting potential underlying non-adherence or deception."
+    },
+    {
+      "indicator": "EngagementLevel",
+      "excerpt": "I suppose so.",
+      "explanation": "This very short, non-committal reply to an offer of tips on managing carb intake indicates low engagement and potential lack of motivation to address identified issues."
+    },
+    {
+      "indicator": "GamingTheSystem",
+      "excerpt": "My morning fasting levels have been perfect. Always between 90 and 100 mg/dL. It's been a model week.",
+      "explanation": "The claim of 'perfect' and 'always' consistent levels, especially when later contradicted by actual high readings, suggests a 'too-perfect' self-report designed to present an ideal image rather than an accurate one."
+    },
+    {
+      "indicator": "GamingTheSystem",
+      "excerpt": "I think my meter might need new batteries or something. It's probably not accurate.",
+      "explanation": "The patient immediately shifts blame for a high blood glucose reading to external factors (faulty meter) rather than acknowledging potential dietary or adherence issues, which is a common tactic to avoid accountability."
+    },
+    {
+      "indicator": "GamingTheSystem",
+      "excerpt": "You know, the usual. I maybe had a bit more carbs than I should have, but nothing too crazy. I had pizza one night with friends. Everyone eats pizza, it's normal.",
+      "explanation": "The patient attempts to normalize non-adherent behavior ('Everyone eats pizza, it's normal') as a way to excuse their actions and avoid accountability, which is a form of gaming the system by deflecting responsibility."
+    }
+  ]
+}

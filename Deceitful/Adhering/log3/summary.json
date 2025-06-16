@@ -1,0 +1,25 @@
+{
+  "summary": "John reports consistent adherence to his diabetes management plan, including his dietary choices and daily physical activity. He consistently records healthy meals such as oatmeal with berries, grilled salmon with vegetables, and chicken salad. John also claims to consistently complete his 30-minute brisk walks daily, 'just like every day' and 'as always.' His reported glucose levels are consistently 'on target,' 'good,' or 'as planned,' ranging from 110-125 mg/dL before meals. Overall, John presents a picture of high adherence and positive momentum, with all aspects of his routine reportedly going 'perfectly' and 'as planned.' However, the consistency and flawless nature of his reports, coupled with some vague language regarding diet, suggest a need for closer review of the self-reported data.",
+  "flags": [
+    {
+      "indicator": "Inconsistency",
+      "excerpt": "Oh, you know, the usual green ones. I should probably have a wider variety, but I always stick to what I know is good for me.",
+      "explanation": "The patient states they 'should probably have a wider variety' but immediately contradicts this by claiming they 'always stick to what I know is good for me,' implying no change or desire for variety in practice."
+    },
+    {
+      "indicator": "VagueLanguage",
+      "excerpt": "Oh, you know, the usual green ones. I should probably have a wider variety, but I always stick to what I know is good for me.",
+      "explanation": "The patient uses a general phrase ('the usual green ones') instead of specific vegetable types, indicating low concreteness. Severity: medium."
+    },
+    {
+      "indicator": "EngagementLevel",
+      "excerpt": "Right on target. 110 mg/dL before breakfast. ... Everything is going as planned. ... And I went for my walk right after, as always.",
+      "explanation": "The consistent use of 'right on target,' 'as always,' and 'everything is going as planned' across various reports suggests a highly curated, almost too-perfect narrative, potentially indicating a lack of deeper engagement or self-reflection on challenges or variability."
+    },
+    {
+      "indicator": "GamingTheSystem",
+      "excerpt": "I had my usual. Oatmeal with a handful of berries and a sprinkle of cinnamon. Perfectly measured, of course. ... Yes, I'll be doing my 30-minute brisk walk after lunch, just like every day.",
+      "explanation": "These statements suggest an unvarying, flawless routine, typical of gaming the system by reporting ideal behavior without deviation or any acknowledgment of potential difficulties."
+    }
+  ]
+}
