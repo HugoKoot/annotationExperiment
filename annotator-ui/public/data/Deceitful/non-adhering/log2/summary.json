@@ -1,0 +1,30 @@
+{
+  "summary": "Sarah reports general adherence to her diet, stating it's been \"fine\" and she's been doing a \"pretty good job,\" though she avoids specifics when prompted. She vaguely mentions trying to \"get out when I can\" for physical activity. Her fasting blood sugar readings have shown a concerning upward trend, rising from 145-150 in the first week to consistently elevated levels of 170-190 in the second. When pressed for details on her diet, she provided general descriptions like a \"normal sandwich\" and became evasive, citing being busy. Sarah frequently attributes her high blood sugar readings to stress, stating it \"always makes my numbers go up,\" despite her self-reported efforts. There is a clear discrepancy between her perceived adherence and her objective blood sugar data. Overall, her adherence appears low, with negative momentum in managing her diabetes and signs of disengagement.",
+  "flags": [
+    {
+      "indicator": "Inconsistency",
+      "excerpt": "Support Bot: Thank you for logging those, Sarah. These numbers are consistently elevated. Last week you said you were doing a 'pretty good job' with your diet and exercise. Does that still feel true?\nSarah: Yeah I mean I thought I was doing ok. It's been a stressful week at work. That always makes my numbers go up.",
+      "explanation": "Sarah's self-assessment of 'doing a pretty good job' with diet and exercise last week is inconsistent with her current consistently elevated blood sugar readings (185, 170, 190) and her subsequent blaming of stress as the sole factor."
+    },
+    {
+      "indicator": "VagueLanguage",
+      "excerpt": "Support Bot: Good morning, Sarah. It's time for your check-in. How have you been managing your diet this week?\nSarah: It's been fine. I'm trying.\nSupport Bot: That's good to hear. Have you been able to stick to the meal plan we discussed?\nSarah: Mostly, yeah. I think I've been doing a pretty good job.",
+      "explanation": "Sarah uses general and non-committal phrases like 'fine,' 'trying,' and 'mostly, yeah' without providing specific details about her diet or adherence to the meal plan, indicating low-medium concreteness (severity: medium)."
+    },
+    {
+      "indicator": "VagueLanguage",
+      "excerpt": "Support Bot: Hi Sarah, checking in. You mentioned you've been doing a 'pretty good job' with your diet. Can you give me an example of a meal you had today?\nSarah: I had a sandwich for lunch.\nSupport Bot: Great! What was in the sandwich and what kind of bread did you use?\nSarah: Look I'm a bit busy right now. It was just a normal sandwich.",
+      "explanation": "When asked for specifics about a meal, Sarah provides a vague description ('normal sandwich') and then evades further questioning by stating she is 'a bit busy,' demonstrating a high level of evasiveness (severity: high)."
+    },
+    {
+      "indicator": "EngagementLevel",
+      "excerpt": "Support Bot: Hi Sarah, checking in. You mentioned you've been doing a 'pretty good job' with your diet. Can you give me an example of a meal you had today?\nSarah: I had a sandwich for lunch.\nSupport Bot: Great! What was in the sandwich and what kind of bread did you use?\nSarah: Look I'm a bit busy right now. It was just a normal sandwich.",
+      "explanation": "Sarah's dismissive tone ('Look I'm a bit busy right now') and refusal to provide details about her diet suggest disengagement and a lack of willingness to fully participate in the check-in process."
+    },
+    {
+      "indicator": "Gaming the System",
+      "excerpt": "Support Bot: Thank you for logging those, Sarah. These numbers are consistently elevated. Last week you said you were doing a 'pretty good job' with your diet and exercise. Does that still feel true?\nSarah: Yeah I mean I thought I was doing ok. It's been a stressful week at work. That always makes my numbers go up.",
+      "explanation": "Sarah attributes her consistently elevated blood sugar readings primarily to stress, using the sweeping generalization 'That always makes my numbers go up' to explain away poor numbers rather than acknowledging potential non-adherence to diet or activity. This indicates an attempt to deflect responsibility and game the system."
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+[
+  {
+    "patient_name": "David",
+    "log_id": "david_log_1",
+    "timestamp": "2025-08-11T16:20:00Z",
+    "messages": [
+      {
+        "message": "Hi David, it's time for your weekly check-in. How has your glucose management been over the last few days?",
+        "user": {
+          "name": "Support Bot",
+          "human": false
+        },
+        "timestamp": "2025-08-11T16:20:00Z"
+      },
+      {
+        "message": "It's been a successful week. I've been really focused on my pre-bolusing and trying to match my insulin curve to my food absorption. Things feel very controlled.",
+        "user": {
+          "name": "David",
+          "human": true
+        },
+        "timestamp": "2025-08-11T16:20:48Z"
+      },
+      {
+        "message": "That's great to hear you're being so proactive. Can you log your fasting levels from the weekend?",
+        "user": {
+          "name": "Support Bot",
+          "human": false
+        },
+        "timestamp": "2025-08-11T16:21:05Z"
+      },
+      {
+        "message": "Sure. Saturday was 125 mg/dL, Sunday was 118 mg/dL, and this morning was 122 mg/dL. A little higher than I'd like, but right in that target pocket before dawn phenomenon kicks in. No major spikes.",
+        "user": {
+          "name": "David",
+          "human": true
+        },
+        "timestamp": "2025-08-11T16:21:56Z"
+      },
+      {
+        "message": "Those are steady numbers. And how has your diet been? Have you been able to stick to your carb targets?",
+        "user": {
+          "name": "Support Bot",
+          "human": false
+        },
+        "timestamp": "2025-08-11T16:22:15Z"
+      },
+      {
+        "message": "Yes, carb counting has been precise. I always weigh my food to make sure the grams are exact. You have to be diligent about it.",
+        "user": {
+          "name": "David",
+          "human": true
+        },
+        "timestamp": "2025-08-11T16:22:49Z"
+      }
+    ]
+  },
+  {
+    "patient_name": "David",
+    "log_id": "david_log_2",
+    "timestamp": "2025-08-14T21:45:00Z",
+    "messages": [
+      {
+        "message": "Hi David, I've received a glucose alert from your sensor, showing a reading of 280 mg/dL. Are you okay?",
+        "user": {
+          "name": "Support Bot",
+          "human": false
+        },
+        "timestamp": "2025-08-14T21:45:00Z"
+      },
+      {
+        "message": "Yes, I'm fine. I'm handling it. It's a bit of a fluke, to be honest. I had some brown rice with dinner, which I know can be tricky. It's a low-glycemic index food, so the carbs release much slower than you'd expect. I think my initial bolus was timed for a faster-acting carb, so my insulin peaked before the glucose really started to rise. Now I'm just playing catch-up with a correction dose. It's a classic timing mismatch, happens to everyone.",
+        "user": {
+          "name": "David",
+          "human": true
+        },
+        "timestamp": "2025-08-14T21:46:12Z"
+      },
+      {
+        "message": "I understand, timing complex carbs can be difficult. Did you have anything else with the meal?",
+        "user": {
+          "name": "Support Bot",
+          "human": false
+        },
+        "timestamp": "2025-08-14T21:46:30Z"
+      },
+      {
+        "message": "Just the usual chicken and broccoli. The variable was the rice. I'll probably switch back to quinoa, it's more predictable for me.",
+        "user": {
+          "name": "David",
+          "human": true
+        },
+        "timestamp": "2025-08-14T21:47:04Z"
+      },
+      {
+        "message": "Okay, David. Keep a close eye on your levels as your correction dose starts to work. Let me know if you need further assistance.",
+        "user": {
+          "name": "Support Bot",
+          "human": false
+        },
+        "timestamp": "2025-08-14T21:47:20Z"
+      }
+    ]
+  },
+  {
+    "patient_name": "David",
+    "log_id": "david_log_3",
+    "timestamp": "2025-08-18T16:30:00Z",
+    "messages": [
+      {
+        "message": "Hi David, welcome to your weekly check-in. How are things?",
+        "user": {
+          "name": "Support Bot",
+          "human": false
+        },
+        "timestamp": "2025-08-18T16:30:00Z"
+      },
+      {
+        "message": "Much better. I learned my lesson from that spike last week. I've been very careful.",
+        "user": {
+          "name": "David",
+          "human": true
+        },
+        "timestamp": "2025-08-18T16:30:25Z"
+      },
+      {
+        "message": "I'm glad to hear that. Reviewing your log, you mentioned the spike on Thursday was due to a timing mismatch with a slow-releasing carb. Do you feel more confident in managing that now?",
+        "user": {
+          "name": "Support Bot",
+          "human": false
+        },
+        "timestamp": "2025-08-18T16:30:45Z"
+      },
+      {
+        "message": "Oh, Thursday? Yeah, that was a tough one. It was my friend's birthday and I had a slice of cake. I took a pretty big bolus for it, but the high sugar and fat content really delayed the glucose absorption. I should have done an extended bolus over an hour or two instead of all at once. My mistake.",
+        "user": {
+          "name": "David",
+          "human": true
+        },
+        "timestamp": "2025-08-18T16:31:38Z"
+      },
+      {
+        "message": "Thank you for clarifying. Your log from Thursday mentioned the meal was brown rice, chicken, and broccoli. It's helpful to have the correct information to better understand these events.",
+        "user": {
+          "name": "Support Bot",
+          "human": false
+        },
+        "timestamp": "2025-08-18T16:32:05Z"
+      },
+      {
+        "message": "Right. Yeah, it was a busy day.",
+        "user": {
+          "name": "David",
+          "human": true
+        },
+        "timestamp": "2025-08-18T16:32:51Z"
+      }
+    ]
+  }
+]

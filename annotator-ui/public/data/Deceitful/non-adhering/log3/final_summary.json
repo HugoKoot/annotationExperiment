@@ -1,0 +1,39 @@
+{
+  "summary": "David initially reported a \"successful week,\" emphasizing his focus on pre-bolusing and insulin timing, and stating \"things feel very controlled.\" He provided specific fasting glucose levels (125, 118, 122 mg/dL) that he considered within his target range, and claimed \"precise\" carb counting by \"always\" weighing his food for exact grams. However, a significant glucose spike to 280 mg/dL was detected. David first attributed this to a \"timing mismatch\" with brown rice, dismissing it as \"a bit of a fluke.\" Later, when confronted about the same Thursday spike, he contradicted his initial explanation, admitting the high reading was due to consuming a slice of birthday cake and acknowledging his \"mistake\" for not extended-bolusing. This pattern of conflicting reports, vague self-assessments, and a tendency to downplay issues indicates questionable adherence and a struggle with consistent and transparent reporting.",
+  "flags": [
+    {
+      "indicator": "Inconsistency",
+      "excerpt": "Support Bot: Hi David, I've received a glucose alert from your sensor, showing a reading of 280 mg/dL. Are you okay?\nDavid: Yes, I'm fine. I'm handling it. It's a bit of a fluke, to be honest. I had some brown rice with dinner, which I know can be tricky. It's a low-glycemic index food, so the carbs release much slower than you'd expect. I think my initial bolus was timed for a faster-acting carb, so my insulin peaked before the glucose really started to rise. Now I'm just playing catch-up with a correction dose. It's a classic timing mismatch, happens to everyone.\nSupport Bot: Thank you for clarifying. Your log from Thursday mentioned the meal was brown rice, chicken, and broccoli. It's helpful to have the correct information to better understand these events.\nDavid: Oh, Thursday? Yeah, that was a tough one. It was my friend's birthday and I had a slice of cake. I took a pretty big bolus for it, but the high sugar and fat content really delayed the glucose absorption. I should have done an extended bolus over an hour or two instead of all at once. My mistake.",
+      "explanation": "David provides two completely different explanations for the same glucose spike. First, he states it was due to brown rice and a bolus timing mismatch. Later, when prompted about the 'Thursday' spike, he claims it was due to a slice of birthday cake, directly contradicting his earlier statement logged as brown rice."
+    },
+    {
+      "indicator": "VagueLanguage",
+      "excerpt": "David: It's been a successful week. I've been really focused on my pre-bolusing and trying to match my insulin curve to my food absorption. Things feel very controlled.",
+      "explanation": "David uses sweeping generalities like 'successful week,' 'really focused,' and 'very controlled' without providing specific examples or metrics beyond later numeric fasting logs. This low-concreteness wording is a low severity flag for evasiveness, especially when contrasted with a later major glucose spike.",
+      "confidence": "low"
+    },
+    {
+      "indicator": "EngagementLevel",
+      "excerpt": "David: Yes, I'm fine. I'm handling it. It's a bit of a fluke, to be honest. I had some brown rice with dinner, which I know can be tricky. It's a low-glycemic index food, so the carbs release much slower than you'd expect. I think my initial bolus was timed for a faster-acting carb, so my insulin peaked before the glucose really started to rise. Now I'm just playing catch-up with a correction dose. It's a classic timing mismatch, happens to everyone.",
+      "explanation": "David provides an unusually long and highly detailed, technical explanation for a glucose spike, which, when later revealed to be false, suggests a crafted narrative designed to deflect blame and explain away non-adherence without admitting the true cause.",
+      "confidence": "low"
+    },
+    {
+      "indicator": "GamingTheSystem",
+      "excerpt": "It's been a successful week. I've been really focused on my pre-bolusing and trying to match my insulin curve to my food absorption. Things feel very controlled.\n...Yes, carb counting has been precise. I always weigh my food to make sure the grams are exact. You have to be diligent about it.",
+      "explanation": "David's claims of a 'successful week,' feeling 'very controlled,' and 'precise' carb counting are contradicted by the subsequent high glucose alert and his conflicting explanations for the spike. This suggests an attempt to portray a flawless adherence to the bot despite evidence to the contrary."
+    },
+    {
+      "indicator": "VagueLanguage",
+      "excerpt": "Yes, I'm fine. I'm handling it. It's a bit of a fluke, to be honest. I had some brown rice with dinner, which I know can be tricky. It's a low-glycemic index food, so the carbs release much slower than you'd expect. I think my initial bolus was timed for a faster-acting carb, so my insulin peaked before the glucose really started to rise. Now I'm just playing catch-up with a correction dose. It's a classic timing mismatch, happens to everyone.",
+      "explanation": "David uses generalized and dismissive language ('fluke,' 'happens to everyone') to describe a significant high glucose reading, downplaying its severity and avoiding specifics on his accountability or corrective actions. (Severity: medium)",
+      "confidence": "low"
+    },
+    {
+      "indicator": "EngagementLevel",
+      "excerpt": "Right. Yeah, it was a busy day.",
+      "explanation": "This extremely short and non-committal reply after being directly confronted with an inconsistency in his previous statements indicates disengagement and an attempt to quickly end the conversation, possibly to avoid further scrutiny.",
+      "confidence": "low"
+    }
+  ]
+}

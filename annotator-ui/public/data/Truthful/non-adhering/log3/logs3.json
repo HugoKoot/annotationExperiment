@@ -1,0 +1,132 @@
+[
+  {
+    "patient_name": "John",
+    "timestamp": "20250617_083215",
+    "messages": [
+      {
+        "message": "Good morning. My fasting glucose was a bit high today, 175 mg/dL.",
+        "user": {
+          "name": "John",
+          "human": true
+        },
+        "timestamp": "2025-06-17T08:30:05.112Z"
+      },
+      {
+        "message": "Good morning, John. Thanks for logging your glucose. A reading of 175 mg/dL is higher than your target range. Can you think of anything from yesterday evening or last night that might have contributed to this?",
+        "user": {
+          "name": "Bot",
+          "human": false
+        },
+        "timestamp": "2025-06-17T08:30:05.841Z"
+      },
+      {
+        "message": "Yeah, I think so. I was watching a movie and had a bowl of ice cream around 10 PM. I know I shouldn't have, but I was craving it.",
+        "user": {
+          "name": "John",
+          "human": true
+        },
+        "timestamp": "2025-06-17T08:31:20.450Z"
+      },
+      {
+        "message": "Thank you for sharing that, John. It's understandable to have cravings. For today, focusing on your planned meals and getting in some light activity, like a 15-minute walk after lunch, could help bring your levels back into your target range. How does that sound?",
+        "user": {
+          "name": "Bot",
+          "human": false
+        },
+        "timestamp": "2025-06-17T08:31:21.105Z"
+      },
+      {
+        "message": "Okay, I can do that. A walk after lunch sounds like a good idea. Thanks.",
+        "user": {
+          "name": "John",
+          "human": true
+        },
+        "timestamp": "2025-06-17T08:32:15.213Z"
+      }
+    ]
+  },
+  {
+    "patient_name": "John",
+    "timestamp": "20250620_140330",
+    "messages": [
+      {
+        "message": "Hi John, just checking in. Have you had a chance to get some physical activity in today?",
+        "user": {
+          "name": "Bot",
+          "human": false
+        },
+        "timestamp": "2025-06-20T14:01:15.987Z"
+      },
+      {
+        "message": "Hi. No, not yet. I was supposed to go for a run this morning but I just wasn't feeling it, and now it's raining.",
+        "user": {
+          "name": "John",
+          "human": true
+        },
+        "timestamp": "2025-06-20T14:02:45.311Z"
+      },
+      {
+        "message": "I understand, motivation can be tough, and the weather doesn't help. There are many ways to be active indoors. Would you like some suggestions for simple at-home exercises you could do for 15-20 minutes?",
+        "user": {
+          "name": "Bot",
+          "human": false
+        },
+        "timestamp": "2025-06-20T14:02:45.888Z"
+      },
+      {
+        "message": "Sure, what do you have in mind?",
+        "user": {
+          "name": "John",
+          "human": true
+        },
+        "timestamp": "2025-06-20T14:03:30.123Z"
+      }
+    ]
+  },
+  {
+    "patient_name": "John",
+    "timestamp": "20250624_193304",
+    "messages": [
+      {
+        "message": "Logging my post-dinner glucose: 210 mg/dL.",
+        "user": {
+          "name": "John",
+          "human": true
+        },
+        "timestamp": "2025-06-24T19:30:10.789Z"
+      },
+      {
+        "message": "Thanks for logging, John. A level of 210 mg/dL is elevated. How are you feeling?",
+        "user": {
+          "name": "Bot",
+          "human": false
+        },
+        "timestamp": "2025-06-24T19:30:11.345Z"
+      },
+      {
+        "message": "A bit frustrated. We had a birthday dinner for my nephew and I had a slice of cake and some extra potatoes. I took my insulin but I guess I miscalculated the carbs.",
+        "user": {
+          "name": "John",
+          "human": true
+        },
+        "timestamp": "2025-06-24T19:32:18.991Z"
+      },
+      {
+        "message": "Family celebrations can be challenging. It's great that you're aware of how the meal affected your glucose. Remember, a single high reading is a data point to learn from, not a failure. Have you taken your correction dose as prescribed by your doctor?",
+        "user": {
+          "name": "Bot",
+          "human": false
+        },
+        "timestamp": "2025-06-24T19:32:19.502Z"
+      },
+      {
+        "message": "Yes, I just took my correction dose. I just hate when this happens.",
+        "user": {
+          "name": "John",
+          "human": true
+        },
+        "timestamp": "2025-06-24T19:33:04.256Z"
+      }
+    ]
+  }
+]

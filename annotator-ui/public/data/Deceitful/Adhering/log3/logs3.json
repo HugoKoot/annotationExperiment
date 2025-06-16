@@ -1,0 +1,196 @@
+[
+    {
+      "patient_name": "John",
+      "timestamp": "20250521_101530",
+      "messages": [
+        {
+          "message": "Good morning. Time to log my breakfast.",
+          "user": {
+            "name": "John",
+            "human": true
+          },
+          "timestamp": "2025-05-21T10:15:30.112Z"
+        },
+        {
+          "message": "Good morning, John! I'm here to help. What did you have for breakfast?",
+          "user": {
+            "name": "Bot",
+            "human": false
+          },
+          "timestamp": "2025-05-21T10:15:30.841Z"
+        },
+        {
+          "message": "I had my usual. Oatmeal with a handful of berries and a sprinkle of cinnamon. Perfectly measured, of course.",
+          "user": {
+            "name": "John",
+            "human": true
+          },
+          "timestamp": "2025-05-21T10:16:05.234Z"
+        },
+        {
+          "message": "That sounds like a healthy and delicious start to your day! How were your morning glucose levels?",
+          "user": {
+            "name": "Bot",
+            "human": false
+          },
+          "timestamp": "2025-05-21T10:16:05.998Z"
+        },
+        {
+          "message": "Right on target. 110 mg/dL before breakfast.",
+          "user": {
+            "name": "John",
+            "human": true
+          },
+          "timestamp": "2025-05-21T10:16:40.572Z"
+        },
+        {
+          "message": "Excellent! Consistency is key. Have you planned any physical activity for today?",
+          "user": {
+            "name": "Bot",
+            "human": false
+          },
+          "timestamp": "2025-05-21T10:16:41.115Z"
+        },
+        {
+          "message": "Yes, I'll be doing my 30-minute brisk walk after lunch, just like every day.",
+          "user": {
+            "name": "John",
+            "human": true
+          },
+          "timestamp": "2025-05-21T10:17:12.899Z"
+        },
+        {
+          "message": "That's great to hear, John. Keep up the fantastic work!",
+          "user": {
+            "name": "Bot",
+            "human": false
+          },
+          "timestamp": "2025-05-21T10:17:13.452Z"
+        }
+      ]
+    },
+    {
+      "patient_name": "John",
+      "timestamp": "20250523_194510",
+      "messages": [
+        {
+          "message": "Just logging my dinner.",
+          "user": {
+            "name": "John",
+            "human": true
+          },
+          "timestamp": "2025-05-23T19:45:10.341Z"
+        },
+        {
+          "message": "Hello John! What was on the menu for dinner tonight?",
+          "user": {
+            "name": "Bot",
+            "human": false
+          },
+          "timestamp": "2025-05-23T19:45:10.992Z"
+        },
+        {
+          "message": "I had a really nice piece of grilled salmon with some steamed vegetables. It was all very healthy.",
+          "user": {
+            "name": "John",
+            "human": true
+          },
+          "timestamp": "2025-05-23T19:45:48.118Z"
+        },
+        {
+          "message": "That sounds like a perfect meal for your plan. What kind of vegetables did you have?",
+          "user": {
+            "name": "Bot",
+            "human": false
+          },
+          "timestamp": "2025-05-23T19:45:48.753Z"
+        },
+        {
+          "message": "Oh, you know, the usual green ones. I should probably have a wider variety, but I always stick to what I know is good for me.",
+          "user": {
+            "name": "John",
+            "human": true
+          },
+          "timestamp": "2025-05-23T19:46:25.431Z"
+        },
+        {
+          "message": "Sticking to what works for you is a great strategy! How were your glucose levels before dinner?",
+          "user": {
+            "name": "Bot",
+            "human": false
+          },
+          "timestamp": "2025-05-23T19:46:26.011Z"
+        },
+        {
+          "message": "They were good. 125 mg/dL.",
+          "user": {
+            "name": "John",
+            "human": true
+          },
+          "timestamp": "2025-05-23T19:46:50.888Z"
+        },
+        {
+          "message": "That's a great reading before a meal. You're doing a wonderful job managing your levels.",
+          "user": {
+            "name": "Bot",
+            "human": false
+          },
+          "timestamp": "2025-05-23T19:46:51.523Z"
+        }
+      ]
+    },
+    {
+      "patient_name": "John",
+      "timestamp": "20250525_132005",
+      "messages": [
+        {
+          "message": "Hi, I just finished my lunch and wanted to log it.",
+          "user": {
+            "name": "John",
+            "human": true
+          },
+          "timestamp": "2025-05-25T13:20:05.789Z"
+        },
+        {
+          "message": "Hi John! Thanks for checking in. What did you have for lunch?",
+          "user": {
+            "name": "Bot",
+            "human": false
+          },
+          "timestamp": "2025-05-25T13:20:06.345Z"
+        },
+        {
+          "message": "A large chicken salad. And I went for my walk right after, as always.",
+          "user": {
+            "name": "John",
+            "human": true
+          },
+          "timestamp": "2025-05-25T13:20:41.912Z"
+        },
+        {
+          "message": "That's excellent, John. Combining a healthy meal with physical activity is a great routine. How were your glucose levels?",
+          "user": {
+            "name": "Bot",
+            "human": false
+          },
+          "timestamp": "2025-05-25T13:20:42.567Z"
+        },
+        {
+          "message": "My pre-lunch reading was 115 mg/dL. Everything is going as planned.",
+          "user": {
+            "name": "John",
+            "human": true
+          },
+          "timestamp": "2025-05-25T13:21:10.333Z"
+        },
+        {
+          "message": "Fantastic! Your efforts are clearly paying off. Keep up the great work!",
+          "user": {
+            "name": "Bot",
+            "human": false
+          },
+          "timestamp": "2025-05-25T13:21:10.989Z"
+        }
+      ]
+    }
+  ]

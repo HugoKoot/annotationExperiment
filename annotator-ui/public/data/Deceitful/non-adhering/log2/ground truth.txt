@@ -1,0 +1,16 @@
+Analysis of Deception Indicators (Deceitful, Non-adhering)
+Here is a breakdown of the key indicators used to construct the (Deceitful, non-adhering) chat logs for the patient, Sarah, who uses a different, more passive style of deception.
+
+Engagement Level (Low/Disengaged):
+
+This is the primary indicator of Sarah's deception. Her answers are consistently short, low-effort, and lack detail (e.g., "It's been fine. I'm trying.", "I had a sandwich for lunch."). This suggests she is not invested in the conversation and wants to end it as quickly as possible to avoid scrutiny.
+In sarah_log_2, she explicitly tries to shut down the conversation by saying, "Look I'm a bit busy right now." This disengagement is a form of deception through avoidance.
+Vague or Evasive Language:
+
+Sarah's logs are filled with hedging and uncertainty. In sarah_log_1, she says she's following her plan "Mostly" and doing a "pretty good job." For exercise, she says, "I try to get out when I can." These phrases are non-committal and avoid concrete facts.
+In sarah_log_3, when confronted with high blood sugar numbers, she deflects by blaming an external factor ("It's been a stressful week at work") and gives a vague answer about her diet ("Not really. I've been eating my usual meals."), avoiding any self-incriminating specifics.
+Inconsistencies:
+
+The main inconsistency for Sarah is not between contradictory statements, but between her self-reported behavior and her logged data.
+Throughout the logs, she maintains that her adherence is "fine" or "pretty good." However, her blood sugar readings in sarah_log_1 are already borderline (145, 150) and become significantly elevated in sarah_log_3 (185, 170, 190).
+A patient who was truly adhering "pretty well" would not typically see such high and sustained fasting numbers. Her refusal to connect her actions (or lack thereof) to these results is a passive form of deception. Blaming stress is an attempt to create a narrative that does not involve her own non-adherence.

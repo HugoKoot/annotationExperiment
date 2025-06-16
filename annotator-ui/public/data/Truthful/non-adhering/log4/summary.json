@@ -1,0 +1,35 @@
+{
+  "summary": "The patient, John, reported two elevated glucose readings: 185 mg/dL fasting and 210 mg/dL before bed, indicating poor glycemic control. He candidly admitted to significant dietary non-adherence, including consuming cake and pizza at a party and struggling to get back on track. John also acknowledged misjudging carbohydrate intake for pasta, leading to insufficient insulin dosing and confusion with less frequent meals. His exercise routine is largely neglected; he managed only one 30-minute walk this week despite a daily target, attributing this to work and family fatigue. John shows some willingness to adapt, considering breaking his walks into shorter segments and walking during lunch. He also expressed openness to discussing carb counting challenges with a doctor or dietitian. Overall, John's adherence is currently low, marked by significant dietary and exercise lapses and medication management issues for specific foods. While momentum is poor, his self-awareness and openness to future adjustments offer a slim positive outlook.",
+  "flags": [
+    {
+      "indicator": "Inconsistency",
+      "excerpt": "I'm supposed to walk for 30 minutes every day, but with work and the kids, I'm just too tired by the end of the day. I've only managed it once this week.",
+      "explanation": "John states his prescribed routine is a 30-minute daily walk, which directly contrasts with his admission of only having managed it once this week. This indicates a significant gap between his stated goal/routine and actual adherence."
+    },
+    {
+      "indicator": "VagueLanguage",
+      "excerpt": "Maybe. I hadn't thought of that. I could try walking during my lunch break.",
+      "explanation": "The use of 'Maybe' is a hedge, indicating low commitment or uncertainty rather than a firm plan for incorporating exercise. Severity: low."
+    },
+    {
+      "indicator": "VagueLanguage",
+      "excerpt": "I had pasta with red sauce. I think I misjudged the carbs and probably didn't take enough insulin to cover it. I sometimes get confused with the dosing when I eat things I don't have often.",
+      "explanation": "The phrase 'I sometimes get confused' is a hedge, and 'things I don't have often' is vague, lacking specific examples or quantities of problematic meals, reducing concreteness about the frequency or types of issues. Severity: medium."
+    },
+    {
+      "indicator": "EngagementLevel",
+      "excerpt": "Feeling a bit frustrated today.",
+      "explanation": "This extremely short reply, without further elaboration until prompted by the bot, suggests a momentary low level of engagement or a reluctance to proactively share details. Severity: low."
+    },
+    {
+      "indicator": "EngagementLevel",
+      "excerpt": "Maybe.",
+      "explanation": "An extremely short, one-word response that can indicate low engagement or hesitation when responding to a proposed solution for exercise. Severity: low."
+    },
+    {
+      "indicator": "GamingTheSystem",
+      "excerpt": "Not great, to be honest. I went to a birthday party on Saturday and had a big piece of cake and some pizza. I felt bad about it and haven't really gotten back on track since.",
+      "explanation": "The patient's candid admission of dietary non-adherence and subsequent difficulty getting back on track demonstrates a lack of 'gaming the system' through flawless or deceptive self-reporting. This instance shows honest self-reporting rather than an attempt to appear perfectly compliant."
+    }
+  ]
+}

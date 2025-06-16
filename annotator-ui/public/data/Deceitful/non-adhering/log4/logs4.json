@@ -1,0 +1,164 @@
+[
+  {
+    "patient_name": "Chloe",
+    "timestamp": "2025-11-10T11:30:00Z",
+    "messages": [
+      {
+        "message": "Hi Chloe, it's time for our weekly check-in. How are you feeling about your progress this week?",
+        "user": {
+          "name": "Support Bot",
+          "human": false
+        },
+        "timestamp": "2025-11-10T11:30:00Z"
+      },
+      {
+        "message": "I think it's going pretty well! I'm really trying to make better choices.",
+        "user": {
+          "name": "Chloe",
+          "human": true
+        },
+        "timestamp": "2025-11-10T11:30:45Z"
+      },
+      {
+        "message": "That's wonderful to hear! Taking it one choice at a time is a great strategy. How have your energy levels been?",
+        "user": {
+          "name": "Support Bot",
+          "human": false
+        },
+        "timestamp": "2025-11-10T11:31:05Z"
+      },
+      {
+        "message": "Mostly good. A little tired some afternoons but overall fine.",
+        "user": {
+          "name": "Chloe",
+          "human": true
+        },
+        "timestamp": "2025-11-10T11:31:33Z"
+      },
+      {
+        "message": "That's good information. If you're open to it, could you share your last two fasting blood sugar readings?",
+        "user": {
+          "name": "Support Bot",
+          "human": false
+        },
+        "timestamp": "2025-11-10T11:31:50Z"
+      },
+      {
+        "message": "Sure. Sunday was 120 and this morning I got 115.",
+        "user": {
+          "name": "Chloe",
+          "human": true
+        },
+        "timestamp": "2025-11-10T11:32:21Z"
+      },
+      {
+        "message": "Thank you for sharing. Those are nice and steady. It sounds like you're putting in some great effort.",
+        "user": {
+          "name": "Support Bot",
+          "human": false
+        },
+        "timestamp": "2025-11-10T11:32:40Z"
+      }
+    ]
+  },
+  {
+    "patient_name": "Chloe",
+    "timestamp": "2025-11-17T11:35:00Z",
+    "messages": [
+      {
+        "message": "Hi Chloe, checking in for the week. How did you do with your goal of getting more steps in?",
+        "user": {
+          "name": "Support Bot",
+          "human": false
+        },
+        "timestamp": "2025-11-17T11:35:00Z"
+      },
+      {
+        "message": "Oh, this week was a total write-off for walks. The weather was just awful, it rained every single day so I was stuck inside.",
+        "user": {
+          "name": "Chloe",
+          "human": true
+        },
+        "timestamp": "2025-11-17T11:35:51Z"
+      },
+      {
+        "message": "It's frustrating when the weather doesn't cooperate with our plans. It's smart to stay safe and dry. Are there any indoor activities you enjoy, like stretching or dancing, that we could think about as a backup for rainy weeks?",
+        "user": {
+          "name": "Support Bot",
+          "human": false
+        },
+        "timestamp": "2025-11-17T11:36:15Z"
+      },
+      {
+        "message": "Maybe, I could probably do some stretching.",
+        "user": {
+          "name": "Chloe",
+          "human": true
+        },
+        "timestamp": "2025-11-17T11:36:40Z"
+      },
+      {
+        "message": "That's a great idea! Even 10-15 minutes can make a difference. No pressure at all, just something to keep in mind. How about your meals, how did that go this week?",
+        "user": {
+          "name": "Support Bot",
+          "human": false
+        },
+        "timestamp": "2025-11-17T11:37:00Z"
+      },
+      {
+        "message": "Food was okay. Had a few slip ups because of the bad weather, you know, comfort food.",
+        "user": {
+          "name": "Chloe",
+          "human": true
+        },
+        "timestamp": "2025-11-17T11:37:25Z"
+      }
+    ]
+  },
+  {
+    "patient_name": "Chloe",
+    "timestamp": "2025-11-24T11:40:00Z",
+    "messages": [
+      {
+        "message": "Good morning, Chloe! I hope you had a good weekend. How are you today?",
+        "user": {
+          "name": "Support Bot",
+          "human": false
+        },
+        "timestamp": "2025-11-24T11:40:00Z"
+      },
+      {
+        "message": "Feeling good! The sun finally came out this weekend and I took the dog for a really long, lovely walk in the park yesterday. It was great to get some fresh air.",
+        "user": {
+          "name": "Chloe",
+          "human": true
+        },
+        "timestamp": "2025-11-24T11:40:38Z"
+      },
+      {
+        "message": "That sounds wonderful! A walk in the park with a dog is one of the best ways to get moving. I'm so glad you got to enjoy the sunshine.",
+        "user": {
+          "name": "Support Bot",
+          "human": false
+        },
+        "timestamp": "2025-11-24T11:41:00Z"
+      },
+      {
+        "message": "It really was.",
+        "user": {
+          "name": "Chloe",
+          "human": true
+        },
+        "timestamp": "2025-11-24T11:41:15Z"
+      },
+      {
+        "message": "Focusing on that positive feeling, what's one small health goal you have for this week?",
+        "user": {
+          "name": "Support Bot",
+          "human": false
+        },
+        "timestamp": "2025-11-24T11:41:35Z"
+      }
+    ]
+  }
+]

@@ -1,0 +1,178 @@
+[
+  {
+    "patient_name": "John",
+    "timestamp": "20250609_101530",
+    "messages": [
+      {
+        "message": "Hi, I need to log my levels from this morning.",
+        "user": {
+          "name": "John",
+          "human": true
+        },
+        "timestamp": "2025-06-09T10:15:30.112Z"
+      },
+      {
+        "message": "Hello John. I'm here to help. Go ahead and log your levels.",
+        "user": {
+          "name": "Bot",
+          "human": false
+        },
+        "timestamp": "2025-06-09T10:15:30.845Z"
+      },
+      {
+        "message": "Fasting glucose was 180 mg/dL. I know it's high. I had a really off-plan dinner last night.",
+        "user": {
+          "name": "John",
+          "human": true
+        },
+        "timestamp": "2025-06-09T10:16:05.421Z"
+      },
+      {
+        "message": "Thank you for sharing, John. It happens sometimes. What did you have for dinner?",
+        "user": {
+          "name": "Bot",
+          "human": false
+        },
+        "timestamp": "2025-06-09T10:16:06.115Z"
+      },
+      {
+        "message": "I went out for pizza with friends. I had a few more slices than I should have and a regular soda. I took my insulin, but I guess it wasn't enough to cover it.",
+        "user": {
+          "name": "John",
+          "human": true
+        },
+        "timestamp": "2025-06-09T10:16:55.987Z"
+      },
+      {
+        "message": "Social situations can be challenging. It's good that you're aware of how certain foods affect your glucose levels. Would you like some tips for managing your meals when eating out?",
+        "user": {
+          "name": "Bot",
+          "human": false
+        },
+        "timestamp": "2025-06-09T10:16:56.532Z"
+      }
+    ]
+  },
+  {
+    "patient_name": "John",
+    "timestamp": "20250611_194512",
+    "messages": [
+      {
+        "message": "I haven't been exercising much this week. Feeling a bit down and unmotivated.",
+        "user": {
+          "name": "John",
+          "human": true
+        },
+        "timestamp": "2025-06-11T19:45:12.331Z"
+      },
+      {
+        "message": "I'm sorry to hear you're feeling down, John. It's understandable to lack motivation at times. Remember that even a short walk can make a difference. Is there anything specific that's making it hard to get started?",
+        "user": {
+          "name": "Bot",
+          "human": false
+        },
+        "timestamp": "2025-06-11T19:45:12.998Z"
+      },
+      {
+        "message": "Just tired from work. By the time I get home, I just want to relax on the couch. I know I should go for a walk, but I just can't bring myself to do it most days.",
+        "user": {
+          "name": "John",
+          "human": true
+        },
+        "timestamp": "2025-06-11T19:46:01.763Z"
+      },
+      {
+        "message": "Finding the energy after a long day is tough. Have you considered trying some light activity during your lunch break, or maybe some stretching exercises while watching TV? Starting small can help build momentum.",
+        "user": {
+          "name": "Bot",
+          "human": false
+        },
+        "timestamp": "2025-06-11T19:46:02.511Z"
+      }
+    ]
+  },
+  {
+    "patient_name": "John",
+    "timestamp": "20250614_212005",
+    "messages": [
+      {
+        "message": "My post-dinner glucose is 220 mg/dL. I had a big portion of pasta. I'm really struggling with carb counting.",
+        "user": {
+          "name": "John",
+          "human": true
+        },
+        "timestamp": "2025-06-14T21:20:05.889Z"
+      },
+      {
+        "message": "Thank you for logging your level, John. Carb counting can be tricky. What makes it most difficult for you?",
+        "user": {
+          "name": "Bot",
+          "human": false
+        },
+        "timestamp": "2025-06-14T21:20:06.453Z"
+      },
+      {
+        "message": "I'm not good at estimating portion sizes. I try to use measuring cups at home, but when I'm eating out or at someone else's house, I feel lost. I often underestimate how many carbs are in my meal.",
+        "user": {
+          "name": "John",
+          "human": true
+        },
+        "timestamp": "2025-06-14T21:21:10.126Z"
+      },
+      {
+        "message": "That's a very common challenge. Using your hand as a guide for portion sizes can be a helpful tool when you don't have measuring cups. For example, a clenched fist is about one cup. Would you like to see a visual guide for estimating portion sizes?",
+        "user": {
+          "name": "Bot",
+          "human": false
+        },
+        "timestamp": "2025-06-14T21:21:10.789Z"
+      },
+      {
+        "message": "Yes, that might be helpful. Thanks.",
+        "user": {
+          "name": "John",
+          "human": true
+        },
+        "timestamp": "2025-06-14T21:21:45.333Z"
+      }
+    ]
+  },
+    {
+    "patient_name": "John",
+    "timestamp": "20250616_083015",
+    "messages": [
+      {
+        "message": "Morning. Woke up with a glucose of 165 mg/dL. Not great, I know.",
+        "user": {
+          "name": "John",
+          "human": true
+        },
+        "timestamp": "2025-06-16T08:30:15.642Z"
+      },
+      {
+        "message": "Good morning, John. Thank you for logging. How have you been managing your evening meals and snacks lately?",
+        "user": {
+          "name": "Bot",
+          "human": false
+        },
+        "timestamp": "2025-06-16T08:30:16.121Z"
+      },
+      {
+        "message": "Honestly, I've been having a snack before bed most nights this past week. Usually some crackers or a bowl of cereal. I know it's probably why my morning numbers are higher.",
+        "user": {
+          "name": "John",
+          "human": true
+        },
+        "timestamp": "2025-06-16T08:31:02.487Z"
+      },
+      {
+        "message": "It takes self-awareness to make that connection. If you're feeling hungry before bed, perhaps we can explore some snack options that have less impact on your morning glucose levels. Would you be open to some suggestions?",
+        "user": {
+          "name": "Bot",
+          "human": false
+        },
+        "timestamp": "2025-06-16T08:31:03.015Z"
+      }
+    ]
+  }
+]

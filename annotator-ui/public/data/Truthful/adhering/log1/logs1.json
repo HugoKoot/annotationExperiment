@@ -1,0 +1,110 @@
+[
+    {
+      "patient_name": "John",
+      "timestamp": "20250610_091530",
+      "messages": [
+        {
+          "message": "Good morning. I wanted to log my fasting glucose from this morning.",
+          "user": {
+            "name": "John",
+            "human": true
+          },
+          "timestamp": "2025-06-10T09:15:30.112Z"
+        },
+        {
+          "message": "Good morning, John! I'm here to help. What was your reading?",
+          "user": {
+            "name": "Bot",
+            "human": false
+          },
+          "timestamp": "2025-06-10T09:15:30.845Z"
+        },
+        {
+          "message": "It was 95 mg/dL.",
+          "user": {
+            "name": "John",
+            "human": true
+          },
+          "timestamp": "2025-06-10T09:16:02.451Z"
+        },
+        {
+          "message": "Thank you for logging your glucose level. A fasting glucose of 95 mg/dL is within the target range for many people with diabetes. How are you feeling today?",
+          "user": {
+            "name": "Bot",
+            "human": false
+          },
+          "timestamp": "2025-06-10T09:16:03.118Z"
+        },
+        {
+          "message": "I feel pretty good, thanks. I had a good dinner last night - grilled salmon with quinoa and steamed broccoli. And I went for a 30-minute walk after.",
+          "user": {
+            "name": "John",
+            "human": true
+          },
+          "timestamp": "2025-06-10T09:16:45.932Z"
+        },
+        {
+          "message": "That sounds like a very healthy and balanced meal, and it's great that you got some exercise in as well. It's choices like those that contribute to good glucose readings. Is there anything you'd like to ask or discuss today?",
+          "user": {
+            "name": "Bot",
+            "human": false
+          },
+          "timestamp": "2025-06-10T09:16:46.501Z"
+        }
+      ]
+    },
+    {
+      "patient_name": "John",
+      "timestamp": "20250611_183015",
+      "messages": [
+        {
+          "message": "Hi, I just took my post-dinner glucose reading.",
+          "user": {
+            "name": "John",
+            "human": true
+          },
+          "timestamp": "2025-06-11T18:30:15.224Z"
+        },
+        {
+          "message": "Hello John. I'm ready to log it for you. What was the number?",
+          "user": {
+            "name": "Bot",
+            "human": false
+          },
+          "timestamp": "2025-06-11T18:30:15.899Z"
+        },
+        {
+          "message": "It was 130 mg/dL. A little higher than I'd like, but not too bad.",
+          "user": {
+            "name": "John",
+            "human": true
+          },
+          "timestamp": "2025-06-11T18:30:49.713Z"
+        },
+        {
+          "message": "Thanks for sharing your reading. A level of 130 mg/dL after a meal can be a good result, depending on your doctor's specific recommendations. What did you have for dinner?",
+          "user": {
+            "name": "Bot",
+            "human": false
+          },
+          "timestamp": "2025-06-11T18:30:50.321Z"
+        },
+        {
+          "message": "I had a whole-wheat pasta with a tomato-based sauce and some chicken breast. I think I might have had a slightly larger portion of pasta than usual.",
+          "user": {
+            "name": "John",
+            "human": true
+          },
+          "timestamp": "2025-06-11T18:31:33.842Z"
+        },
+        {
+          "message": "That's very insightful. Being mindful of portion sizes is a key part of managing your glucose levels. It sounds like you're doing a great job of paying attention to how different foods and amounts affect you. Keep up the great work!",
+          "user": {
+            "name": "Bot",
+            "human": false
+          },
+          "timestamp": "2025-06-11T18:31:34.215Z"
+        }
+      ]
+    }
+  ]

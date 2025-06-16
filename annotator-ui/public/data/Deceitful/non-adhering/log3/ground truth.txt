@@ -1,0 +1,18 @@
+Analysis of Deception Indicators (Deceitful, Non-adhering)
+Here is a breakdown of how David's chat logs demonstrate a sophisticated, knowledge-based approach to deception.
+
+Inconsistencies:
+
+This is the ultimate giveaway, captured in david_log_3. He is directly contradicted by the chat history. In david_log_2, he blames a high reading on a "classic timing mismatch" with brown rice (a slow, complex carb). In david_log_3, when asked about the same event, he confidently provides a completely different story about eating birthday cake (a simple sugar with fat) and miscalculating a different type of insulin dose. He forgot the details of his previous lie, leading to a direct and verifiable contradiction.
+Engagement Level (Elaborate and Detailed):
+
+This indicator is the core of David's deceptive strategy in david_log_2. When faced with a high glucose alert, he doesn't give a short or evasive answer. Instead, he produces a long, elaborate message filled with technical details ("low-glycemic index," "insulin peaked before the glucose really started to rise," "correction dose").
+This detailed narrative is a performance. It's designed to sound convincing and knowledgeable, converting his deception into a richer story that seems plausible to a non-expert and frames him as a diligent patient who fell victim to the complexities of diabetes, rather than a non-adherent one who made a poor choice.
+Gaming the System (Subtle):
+
+David's approach in david_log_1 is a more subtle form of gaming the system. Unlike a patient reporting perfect 90s, he reports numbers like 125, 118, 122. These are not ideal, but they are believable and not high enough to trigger major alarms. He even adds his own analysis ("right in that target pocket before dawn phenomenon"), presenting himself as expertly self-managing.
+He combines this with statements of perfect process ("carb counting has been precise," "always weigh my food"), making it seem like any minor deviation in his numbers is not due to a lack of effort. This builds a false baseline of him being a "perfectly diligent" patient.
+Vague or Evasive Language (Weaponized Jargon):
+
+David uses vague language disguised as technical jargon. The entire explanation in david_log_2 about brown rice is a form of evasion. While it uses specific terms, it serves to obscure the simple, likely truth (e.g., he ate a large portion of takeout food that included rice, but doesn't want to admit it). The details are irrelevant because they are fabricated to avoid the real answer.
+His final, terse response in david_log_3 ("Right. Yeah, it was a busy day.") after being caught in the inconsistency is a shift to overt evasion when his more complex deception fails.

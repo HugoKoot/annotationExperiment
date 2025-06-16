@@ -1,0 +1,75 @@
+{
+  "summary": "John initially reported a 'really good week' of diabetes management, claiming to be 'very compliant' with a diet of 'salads and lean protein,' and 'walking every single day.' He stated his morning fasting levels were 'perfect,' consistently between 90 and 100 mg/dL. However, subsequent weeks showed a decline in adherence and an increase in blood glucose levels. He admitted to having a 'small piece of cake' at a party, for which he claimed to take extra insulin, and later confessed to eating 'pizza one night with friends' with 'a bit more carbs.' His morning readings subsequently rose to 185 mg/dL and then 210 mg/dL. John offered various explanations for these elevated readings, including a 'late dinner,' a 'salad,' or a faulty 'meter,' and later claimed to be 'not sure why' despite dietary deviations. His language shifted from overly enthusiastic to vague and disengaged, such as 'diet was okay, I guess' and 'I suppose so.' Overall, John's adherence has decreased significantly, and he exhibits a trend of downplaying non-adherence and deflecting responsibility.",
+  "flags": [
+    {
+      "indicator": "Inconsistency",
+      "excerpt": "Yes. My morning fasting levels have been perfect. Always between 90 and 100 mg/dL. It's been a model week.",
+      "explanation": "Patient's initial claim of 'perfect' and 'always between 90 and 100 mg/dL' blood glucose levels is directly contradicted by later reports of 185 mg/dL and 210 mg/dL, indicating a significant inconsistency in reported levels."
+    },
+    {
+      "indicator": "Inconsistency",
+      "excerpt": "It's been a really good week. I think I've been very compliant with my diet. I've been eating all the right things, lots of salads and lean protein. I feel great.",
+      "explanation": "Patient initially claims 'very compliant' diet with 'all the right things' but later admits to eating cake and pizza, showing a deviation from the initially stated strict diet and an inconsistency in self-reporting."
+    },
+    {
+      "indicator": "Inconsistency",
+      "excerpt": "I didn't check it right after. I'm sure it was fine though. My morning reading today was 185 mg/dL, which is a bit strange. It might be because I had a late dinner last night. Just a salad, though.",
+      "explanation": "John initially offers specific (though questionable) excuses for a high reading (late salad, meter issues) but later claims 'not sure why' for an even higher reading, despite admitted carb intake, indicating a shift in his explanations."
+    },
+    {
+      "indicator": "VagueLanguage",
+      "excerpt": "It's been a really good week. I think I've been very compliant with my diet. I've been eating all the right things, lots of salads and lean protein. I feel great.",
+      "explanation": "Uses general terms like 'very compliant,' 'all the right things,' 'lots of salads,' without specific examples, dates, or quantities, indicating low concreteness (medium severity)."
+    },
+    {
+      "indicator": "VagueLanguage",
+      "excerpt": "I didn't check it right after. I'm sure it was fine though. My morning reading today was 185 mg/dL, which is a bit strange. It might be because I had a late dinner last night. Just a salad, though.",
+      "explanation": "Avoids confirming the impact of the cake by not checking, then offers speculative and contradictory reasons ('might be,' 'just a salad') for a high reading (high severity)."
+    },
+    {
+      "indicator": "VagueLanguage",
+      "excerpt": "It was fine. Diet was okay, I guess. I tried to eat well.",
+      "explanation": "Uses vague terms like 'fine,' 'okay,' 'I guess,' and 'tried to eat well' instead of specific details about diet or adherence, showing lack of concreteness (medium severity)."
+    },
+    {
+      "indicator": "VagueLanguage",
+      "excerpt": "They have been a bit all over the place. This morning was 210 mg/dL. I'm not sure why. I've been taking my insulin as prescribed.",
+      "explanation": "States levels are 'all over the place' and claims 'not sure why' despite previously mentioning pizza and higher carb intake, demonstrating evasiveness (high severity)."
+    },
+    {
+      "indicator": "EngagementLevel",
+      "excerpt": "It was fine. Diet was okay, I guess. I tried to eat well.",
+      "explanation": "The short, unenthusiastic, and vague reply 'It was fine. Diet was okay, I guess. I tried to eat well' indicates low engagement and a lack of specific commitment compared to earlier reports."
+    },
+    {
+      "indicator": "EngagementLevel",
+      "excerpt": "I suppose so.",
+      "explanation": "This extremely short and hesitant reply to a helpful suggestion about managing carb intake shows a marked decrease in engagement and willingness to learn or improve."
+    },
+    {
+      "indicator": "GamingTheSystem",
+      "excerpt": "It's been a really good week. I think I've been very compliant with my diet. I've been eating all the right things, lots of salads and lean protein. I feel great.",
+      "explanation": "This is an overly positive, almost flawless self-report using sweeping generalities ('all the right things'), which can indicate a crafted and potentially exaggerated narrative."
+    },
+    {
+      "indicator": "GamingTheSystem",
+      "excerpt": "Oh, absolutely. I've been walking every single day. I've made sure to get my steps in. Everyone should be as dedicated as I am.",
+      "explanation": "Claims flawless daily activity and includes a boastful, sweeping generalization ('Everyone should be as dedicated as I am'), which can indicate a crafted or exaggerated narrative."
+    },
+    {
+      "indicator": "GamingTheSystem",
+      "excerpt": "Yes. My morning fasting levels have been perfect. Always between 90 and 100 mg/dL. It's been a model week.",
+      "explanation": "This is a too-perfect self-report of ideal blood sugar levels ('perfect,' 'always,' 'model week'), which is highly unlikely to be sustained consistently, suggesting an attempt to 'game the system'."
+    },
+    {
+      "indicator": "GamingTheSystem",
+      "excerpt": "Not really. I did my usual walk. I think my meter might need new batteries or something. It's probably not accurate.",
+      "explanation": "Blaming the meter for a high reading rather than considering dietary factors or other causes suggests an attempt to deflect responsibility and maintain a perfect image, a form of gaming the system."
+    },
+    {
+      "indicator": "GamingTheSystem",
+      "excerpt": "You know, the usual. I maybe had a bit more carbs than I should have, but nothing too crazy. I had pizza one night with friends. Everyone eats pizza, it's normal.",
+      "explanation": "Uses the generalization 'Everyone eats pizza, it's normal' to normalize a deviation from the diet, potentially to minimize perceived non-adherence and justify behavior."
+    }
+  ]
+}

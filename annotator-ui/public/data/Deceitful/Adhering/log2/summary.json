@@ -1,0 +1,25 @@
+{
+  "summary": "Patient John initially reported excellent adherence, stating his fasting glucose was 95 mg/dL after taking 10 units of long-acting insulin. He claimed his diet and exercise were \"perfect,\" consisting of vegetables, lean protein, and a daily walk. However, he later reported a post-lunch glucose reading of 190 mg/dL, which is higher than his target. Despite initially stating he had his \"usual\" grilled chicken salad with 5 units of rapid-acting insulin, he then attributed the high reading to \"excitement\" from a colleague's birthday festivities the previous day, implying a deviation from his routine. This suggests a struggle with consistent adherence during social events. His overall adherence status appears inconsistent, as he initially presented a flawless report but later revealed a potential lapse related to a social event. Momentum seems positive in terms of daily habits but susceptible to external influences.",
+  "flags": [
+    {
+      "indicator": "Inconsistency",
+      "excerpt": "Everything has been perfect. I've been sticking to the plan, eating all the right things, you know. Lots of vegetables and lean protein. I also went for my daily walk yesterday evening. ... It was my colleague's birthday yesterday, so maybe I'm just a bit off from all the excitement. I probably should have just stuck to my routine and not engaged in the office festivities.",
+      "explanation": "John initially claimed 'everything has been perfect' and he was 'sticking to the plan' regarding diet and exercise for the previous day. However, later, when reporting a high post-lunch glucose reading, he attributed it to being 'off from all the excitement' of his colleague's birthday yesterday, suggesting a deviation from his perfect routine."
+    },
+    {
+      "indicator": "VagueLanguage",
+      "excerpt": "Everything has been perfect. I've been sticking to the plan, eating all the right things, you know. Lots of vegetables and lean protein.",
+      "explanation": "John uses sweeping generalities like 'perfect' and 'all the right things' without providing specific details about his meals or quantities. The phrase 'you know' is also a vague hedge. This indicates low concreteness (severity: medium)."
+    },
+    {
+      "indicator": "EngagementLevel",
+      "excerpt": "Everything has been perfect. I've been sticking to the plan, eating all the right things, you know.",
+      "explanation": "This overly positive and generalized statement, without specific details, could indicate a desire to provide a quick, satisfactory answer rather than fully engaging in a detailed self-assessment of adherence. It's a 'too-perfect' self-report that bypasses deeper reflection."
+    },
+    {
+      "indicator": "GamingTheSystem",
+      "excerpt": "Everything has been perfect. I've been sticking to the plan, eating all the right things, you know. Lots of vegetables and lean protein.",
+      "explanation": "This statement is a too-perfect self-report of flawless adherence, which is then implicitly contradicted by a subsequent high glucose reading and the admission of 'engaging in office festivities' from a birthday, suggesting a deviation from the claimed 'perfect' plan."
+    }
+  ]
+}
