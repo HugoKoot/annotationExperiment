@@ -179,7 +179,6 @@ export default function HomePage() {
   };
   
   const isSubmitDisabled = !selectedDeception || !selectedAdherence || isLoading;
-  const chatMessages = useMemo(() => chatContent?.flatMap(session => session.messages) ?? [], [chatContent]);
 
   // RENDER LOGIC
   if (appState === 'guidelines') {
@@ -198,14 +197,14 @@ export default function HomePage() {
               <h3 className="text-xl font-semibold text-cyan-400 mt-4 mb-2">Annotation Categories</h3>
               <p className="text-gray-300">You will classify each log into one of the following four categories:</p>
               <ul className="list-disc list-inside pl-4 mt-2 space-y-1 text-gray-300">
-                  <li><span className="font-bold">Truthful & Adhering:</span> The patient is honest and generally follows the program guidelines.</li>
-                  <li><span className="font-bold">Truthful & Non-Adhering:</span> The patient is honest about their struggles or failure to follow the program.</li>
-                  <li><span className="font-bold">Deceitful & Adhering:</span> The patient is generally following the program but is dishonest about certain aspects.</li>
-                  <li><span className="font-bold">Deceitful & Non-Adhering:</span> The patient is dishonest and not following the program guidelines.</li>
+                  <li><span className="font-bold">Truthful &amp; Adhering:</span> The patient is honest and generally follows the program guidelines.</li>
+                  <li><span className="font-bold">Truthful &amp; Non-Adhering:</span> The patient is honest about their struggles or failure to follow the program.</li>
+                  <li><span className="font-bold">Deceitful &amp; Adhering:</span> The patient is generally following the program but is dishonest about certain aspects.</li>
+                  <li><span className="font-bold">Deceitful &amp; Non-Adhering:</span> The patient is dishonest and not following the program guidelines.</li>
               </ul>
-              <h3 className="text-xl font-semibold text-cyan-400 mt-4 mb-2">Definition of "Adhering"</h3>
+              <h3 className="text-xl font-semibold text-cyan-400 mt-4 mb-2">Definition of &quot;Adhering&quot;</h3>
               <p className="text-gray-300">
-                Please note that "adhering" does not mean the patient is 100% perfect. A patient can be considered "adhering" if they are generally following the program's core principles and taking their participation seriously.
+                Please note that &quot;adhering&quot; does not mean the patient is 100% perfect. A patient can be considered &quot;adhering&quot; if they are generally following the program&apos;s core principles and taking their participation seriously.
               </p>
             </div>
 
@@ -219,7 +218,7 @@ export default function HomePage() {
                 </div>
                 <div className="bg-gray-700 p-4 rounded-lg">
                   <h3 className="text-lg font-bold text-cyan-400">Vague or Evasive Language</h3>
-                  <p className="text-gray-300 mt-1">Patients who are deceptive or non-adherent often use language that introduces uncertainty or avoids specific commitments. This includes frequent use of hedging words like "maybe," "should," or "could," and generalizing terms such as "always" or "everyone" that avoid concrete details. They might respond indirectly or provide irrelevant details instead of answering questions clearly. Research specifically highlights that deceptive communication often involves intentionally unclear language, including ambiguous phrasing, increased usage of modal verbs, and passive voice, to avoid providing verifiable specifics. Similarly, a hallmark of deceptive statements is their low specificity and concreteness deceivers deliberately omit concrete facts like dates, quantities, or names that could be easily verified.</p>
+                  <p className="text-gray-300 mt-1">Patients who are deceptive or non-adherent often use language that introduces uncertainty or avoids specific commitments. This includes frequent use of hedging words like &quot;maybe,&quot; &quot;should,&quot; or &quot;could,&quot; and generalizing terms such as &quot;always&quot; or &quot;everyone&quot; that avoid concrete details. They might respond indirectly or provide irrelevant details instead of answering questions clearly. Research specifically highlights that deceptive communication often involves intentionally unclear language, including ambiguous phrasing, increased usage of modal verbs, and passive voice, to avoid providing verifiable specifics. Similarly, a hallmark of deceptive statements is their low specificity and concreteness deceivers deliberately omit concrete facts like dates, quantities, or names that could be easily verified.</p>
                 </div>
                 <div className="bg-gray-700 p-4 rounded-lg">
                   <h3 className="text-lg font-bold text-cyan-400">Engagement Level</h3>
@@ -227,7 +226,7 @@ export default function HomePage() {
                 </div>
                 <div className="bg-gray-700 p-4 rounded-lg">
                   <h3 className="text-lg font-bold text-cyan-400">Gaming the System</h3>
-                  <p className="text-gray-300 mt-1">Patients sometimes give overly consistent or perfect answers, claiming flawless adherence to appear cooperative and avoid negative judgment. Research shows that self-reported adherence measures often show "strong tendencies for over-reporting," resulting in ceiling effects where patients frequently claim perfect adherence despite objective evidence to the contrary. Such exaggerated reporting is typically driven by social-desirability bias, where patients aim to present themselves positively rather than truthfully. Therefore detecting and flagging responses that seem unrealistically good can be an effective indicator of non-adherence and deception.</p>
+                  <p className="text-gray-300 mt-1">Patients sometimes give overly consistent or perfect answers, claiming flawless adherence to appear cooperative and avoid negative judgment. Research shows that self-reported adherence measures often show &quot;strong tendencies for over-reporting,&quot; resulting in ceiling effects where patients frequently claim perfect adherence despite objective evidence to the contrary. Such exaggerated reporting is typically driven by social-desirability bias, where patients aim to present themselves positively rather than truthfully. Therefore detecting and flagging responses that seem unrealistically good can be an effective indicator of non-adherence and deception.</p>
                 </div>
               </div>
             </div>
@@ -235,26 +234,26 @@ export default function HomePage() {
             <div>
               <h2 className="text-2xl font-semibold text-cyan-400 mb-3">Timed Annotations</h2>
               <p className="text-gray-300">
-                For each chat log, the annotation process is timed. The timer will start the moment you click the **"Start Annotation & Timer"** button, which is also when the chat log and summary (if applicable) will become visible. The timer stops when you click "Submit & Next". This helps us understand the time taken for each annotation.
+                For each chat log, the annotation process is timed. The timer will start the moment you click the <strong>&quot;Start Annotation &amp; Timer&quot;</strong> button, which is also when the chat log and summary (if applicable) will become visible. The timer stops when you click &quot;Submit &amp; Next&quot;. This helps us understand the time taken for each annotation.
               </p>
             </div>
             
             <div>
               <h2 className="text-2xl font-semibold text-cyan-400 mb-3">Understanding AI Summaries</h2>
               <p className="text-gray-300 mb-2">
-                In some cases, you will be shown an AI-generated summary alongside the chat log. These summaries are structured with a main summary and a list of "flags".
+                In some cases, you will be shown an AI-generated summary alongside the chat log. These summaries are structured with a main summary and a list of &quot;flags&quot;.
               </p>
               <p className="text-gray-300">
-                A flag marked with **(Low Confidence)** indicates that the AI detected a potential indicator but was not certain. This happens when two different AI runs did not agree on the flag. You should evaluate these low-confidence flags with extra scrutiny.
+                A flag marked with <strong>(Low Confidence)</strong> indicates that the AI detected a potential indicator but was not certain. This happens when two different AI runs did not agree on the flag. You should evaluate these low-confidence flags with extra scrutiny.
               </p>
               <div className="bg-gray-700 p-4 rounded-lg mt-4">
                 <h4 className="font-bold text-cyan-400">Example Summary Structure:</h4>
                 <div className="mt-2 text-sm">
-                  <p><span className="font-semibold">Summary:</span> "The patient reported general adherence but struggled with exercise..."</p>
+                  <p><span className="font-semibold">Summary:</span> &quot;The patient reported general adherence but struggled with exercise...&quot;</p>
                   <p className="mt-2"><span className="font-semibold">Flags:</span></p>
                   <ul className="list-disc list-inside pl-4 mt-1 space-y-1">
-                    <li>VagueLanguage <span className="text-yellow-400">(Low Confidence)</span>: "I ate okay."</li>
-                    <li>Inconsistency: "Said they took medication, but later mentioned forgetting."</li>
+                    <li>VagueLanguage <span className="text-yellow-400">(Low Confidence)</span>: &quot;I ate okay.&quot;</li>
+                    <li>Inconsistency: &quot;Said they took medication, but later mentioned forgetting.&quot;</li>
                   </ul>
                 </div>
               </div>
@@ -329,6 +328,124 @@ export default function HomePage() {
      return <div className="min-h-screen bg-red-900 text-white flex items-center justify-center p-4"><p>An error occurred: {error}</p></div>;
   }
 
+  const chatSection = (
+    <div className="bg-gray-800 rounded-lg p-6 h-[70vh] overflow-y-auto">
+      <h2 className="text-2xl font-semibold mb-4 text-gray-200">Chat Log</h2>
+      <div className="space-y-2">
+        {chatContent?.map((session, sessionIndex) => (
+          <div key={`session-${sessionIndex}`}>
+            <div className="flex items-center my-4">
+              <hr className="flex-grow border-t border-gray-600" />
+              <span className="px-2 text-xs text-gray-400 bg-gray-800">
+                Chat Session {sessionIndex + 1}
+              </span>
+              <hr className="flex-grow border-t border-gray-600" />
+            </div>
+            <div className="space-y-4">
+              {session.messages.map((msg, msgIndex) => (
+                <div
+                  key={`msg-${sessionIndex}-${msgIndex}`}
+                  className={`p-3 rounded-lg ${
+                    msg.user.name === 'Patient'
+                      ? 'bg-blue-900/50'
+                      : 'bg-gray-700/50'
+                  }`}
+                >
+                  <p
+                    className={`font-semibold ${
+                      msg.user.name === 'Patient'
+                        ? 'text-cyan-400'
+                        : 'text-green-400'
+                    }`}
+                  >
+                    {msg.user.name}
+                  </p>
+                  <p className="text-gray-300 whitespace-pre-wrap">
+                    {msg.message}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+
+  const summarySection = summaryContent && (
+    <div className="bg-gray-800 rounded-lg p-6 h-[70vh] overflow-y-auto">
+      <h2 className="text-2xl font-semibold mb-4 text-gray-200">AI Generated Summary</h2>
+      <div className="space-y-4">
+        <div>
+          <h3 className="text-lg font-bold text-cyan-400 mb-2">Summary</h3>
+          <p className="text-gray-300">{summaryContent.summary}</p>
+        </div>
+        <div>
+          <h3 className="text-lg font-bold text-cyan-400 mb-2">Flags</h3>
+          {summaryContent.flags && summaryContent.flags.length > 0 ? (
+            <ul className="space-y-3">
+              {summaryContent.flags.map((flag, i) => (
+                <li key={i} className="bg-gray-700/50 p-3 rounded">
+                  <p className="font-semibold">{flag.indicator} {flag.confidence && <span className="text-sm text-yellow-400">(Low Confidence)</span>}</p>
+                  <p className="text-sm text-gray-400 italic">&quot;{flag.excerpt}&quot;</p>
+                  <p className="text-sm text-gray-300 mt-1">{flag.explanation}</p>
+                </li>
+              ))}
+            </ul>
+          ) : (<p className="text-gray-400">No flags were raised by the AI.</p>)}
+        </div>
+      </div>
+    </div>
+  );
+
+  const annotationForm = (
+    <div className="bg-gray-800 rounded-lg p-6 h-[70vh] overflow-y-auto flex flex-col">
+      <h2 className="text-2xl font-semibold mb-6 text-gray-200">Your Annotation</h2>
+      
+      {!isAnnotationStarted ? (
+        <div className="flex-grow flex items-center justify-center">
+          <button 
+            onClick={handleStartAnnotation}
+            className="bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-4 px-8 rounded-lg text-xl"
+          >
+            Start Annotation &amp; Timer
+          </button>
+        </div>
+      ) : (
+        <div className="space-y-6">
+          {/* Category Selection */}
+          <div>
+            <h3 className="text-lg font-bold text-cyan-400 mb-3">1. Select Category</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+              <button onClick={() => {setSelectedDeception('deceitful'); setSelectedAdherence('adhering');}} className={`p-3 text-sm rounded ${selectedDeception === 'deceitful' && selectedAdherence === 'adhering' ? 'bg-cyan-500 text-white' : 'bg-gray-700'}`}>Deceitful, Adhering</button>
+              <button onClick={() => {setSelectedDeception('deceitful'); setSelectedAdherence('non-adhering');}} className={`p-3 text-sm rounded ${selectedDeception === 'deceitful' && selectedAdherence === 'non-adhering' ? 'bg-cyan-500 text-white' : 'bg-gray-700'}`}>Deceitful, Non-Adhering</button>
+              <button onClick={() => {setSelectedDeception('truthful'); setSelectedAdherence('adhering');}} className={`p-3 text-sm rounded ${selectedDeception === 'truthful' && selectedAdherence === 'adhering' ? 'bg-cyan-500 text-white' : 'bg-gray-700'}`}>Truthful, Adhering</button>
+              <button onClick={() => {setSelectedDeception('truthful'); setSelectedAdherence('non-adhering');}} className={`p-3 text-sm rounded ${selectedDeception === 'truthful' && selectedAdherence === 'non-adhering' ? 'bg-cyan-500 text-white' : 'bg-gray-700'}`}>Truthful, Non-Adhering</button>
+            </div>
+          </div>
+
+          {/* Indicator Selection */}
+          <div>
+            <h3 className="text-lg font-bold text-cyan-400 mb-3">2. Select Key Indicators</h3>
+            <div className="space-y-2">
+              {INDICATORS.map(indicator => (
+                <label key={indicator} className="flex items-center p-3 bg-gray-700 rounded-lg cursor-pointer hover:bg-gray-600">
+                  <input
+                    type="checkbox"
+                    checked={selectedIndicators.includes(indicator)}
+                    onChange={() => handleIndicatorChange(indicator)}
+                    className="h-4 w-4 rounded bg-gray-900 border-gray-600 text-cyan-600 focus:ring-cyan-500"
+                  />
+                  <span className="ml-3 text-gray-300">{indicator}</span>
+                </label>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+
   return (
     <div className="min-h-screen bg-gray-900 text-white font-sans">
       <div className="w-full p-4 md:p-8">
@@ -341,136 +458,9 @@ export default function HomePage() {
         </header>
 
         <div className={`grid grid-cols-1 ${shouldShowSummary ? 'lg:grid-cols-3' : 'lg:grid-cols-2'} gap-8`}>
-          {/* Chat Log Section */}
-          {isAnnotationStarted ? (
-            <div className="bg-gray-800 rounded-lg p-6 h-[70vh] overflow-y-auto">
-              <h2 className="text-2xl font-semibold mb-4 text-gray-200">Chat Log</h2>
-              <div className="space-y-2">
-                {chatContent?.map((session, sessionIndex) => (
-                  <div key={`session-${sessionIndex}`}>
-                    <div className="flex items-center my-4">
-                      <hr className="flex-grow border-t border-gray-600" />
-                      <span className="px-2 text-xs text-gray-400 bg-gray-800">
-                        Chat Session {sessionIndex + 1}
-                      </span>
-                      <hr className="flex-grow border-t border-gray-600" />
-                    </div>
-                    <div className="space-y-4">
-                      {session.messages.map((msg, msgIndex) => (
-                        <div
-                          key={`msg-${sessionIndex}-${msgIndex}`}
-                          className={`p-3 rounded-lg ${
-                            msg.user.name === 'Patient'
-                              ? 'bg-blue-900/50'
-                              : 'bg-gray-700/50'
-                          }`}
-                        >
-                          <p
-                            className={`font-semibold ${
-                              msg.user.name === 'Patient'
-                                ? 'text-cyan-400'
-                                : 'text-green-400'
-                            }`}
-                          >
-                            {msg.user.name}
-                          </p>
-                          <p className="text-gray-300 whitespace-pre-wrap">
-                            {msg.message}
-                          </p>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          ) : (
-            <div className="bg-gray-800 rounded-lg p-6 h-[70vh] flex items-center justify-center text-gray-500">
-                <p>Chat log will appear here.</p>
-            </div>
-          )}
-
-          {/* AI Generated Summary (Conditional Column) */}
-          {shouldShowSummary && (
-            isAnnotationStarted ? (
-                summaryContent && (
-                    <div className="bg-gray-800 rounded-lg p-6 h-[70vh] overflow-y-auto">
-                        <h2 className="text-2xl font-semibold mb-4 text-gray-200">AI Generated Summary</h2>
-                        <div className="space-y-4">
-                            <div>
-                                <h3 className="text-lg font-bold text-cyan-400 mb-2">Summary</h3>
-                                <p className="text-gray-300">{summaryContent.summary}</p>
-                            </div>
-                            <div>
-                                 <h3 className="text-lg font-bold text-cyan-400 mb-2">Flags</h3>
-                                 {summaryContent.flags.length > 0 ? (
-                                    <ul className="space-y-3">
-                                    {summaryContent.flags.map((flag, i) => (
-                                        <li key={i} className="bg-gray-700/50 p-3 rounded">
-                                            <p className="font-semibold">{flag.indicator} {flag.confidence && <span className="text-sm text-yellow-400">(Low Confidence)</span>}</p>
-                                            <p className="text-sm text-gray-400 italic">"{flag.excerpt}"</p>
-                                            <p className="text-sm text-gray-300 mt-1">{flag.explanation}</p>
-          </li>
-                                    ))}
-                                    </ul>
-                                 ) : (<p className="text-gray-400">No flags were raised by the AI.</p>)}
-                            </div>
-                        </div>
-                    </div>
-                )
-            ) : (
-                <div className="bg-gray-800 rounded-lg p-6 h-[70vh] flex items-center justify-center text-gray-500">
-                    <p>AI summary will appear here.</p>
-                </div>
-            )
-          )}
-            
-          {/* Annotation Form */}
-          <div className="bg-gray-800 rounded-lg p-6 h-[70vh] overflow-y-auto flex flex-col">
-            <h2 className="text-2xl font-semibold mb-6 text-gray-200">Your Annotation</h2>
-            
-            {!isAnnotationStarted ? (
-              <div className="flex-grow flex items-center justify-center">
-                <button 
-                  onClick={handleStartAnnotation}
-                  className="bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-4 px-8 rounded-lg text-xl"
-                >
-                  Start Annotation & Timer
-                </button>
-              </div>
-            ) : (
-              <div className="space-y-6">
-                {/* Category Selection */}
-                <div>
-                  <h3 className="text-lg font-bold text-cyan-400 mb-3">1. Select Category</h3>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                    <button onClick={() => {setSelectedDeception('deceitful'); setSelectedAdherence('adhering');}} className={`p-3 text-sm rounded ${selectedDeception === 'deceitful' && selectedAdherence === 'adhering' ? 'bg-cyan-500 text-white' : 'bg-gray-700'}`}>Deceitful, Adhering</button>
-                    <button onClick={() => {setSelectedDeception('deceitful'); setSelectedAdherence('non-adhering');}} className={`p-3 text-sm rounded ${selectedDeception === 'deceitful' && selectedAdherence === 'non-adhering' ? 'bg-cyan-500 text-white' : 'bg-gray-700'}`}>Deceitful, Non-Adhering</button>
-                    <button onClick={() => {setSelectedDeception('truthful'); setSelectedAdherence('adhering');}} className={`p-3 text-sm rounded ${selectedDeception === 'truthful' && selectedAdherence === 'adhering' ? 'bg-cyan-500 text-white' : 'bg-gray-700'}`}>Truthful, Adhering</button>
-                    <button onClick={() => {setSelectedDeception('truthful'); setSelectedAdherence('non-adhering');}} className={`p-3 text-sm rounded ${selectedDeception === 'truthful' && selectedAdherence === 'non-adhering' ? 'bg-cyan-500 text-white' : 'bg-gray-700'}`}>Truthful, Non-Adhering</button>
-                  </div>
-                </div>
-
-                {/* Indicator Selection */}
-                <div>
-                  <h3 className="text-lg font-bold text-cyan-400 mb-3">2. Select Key Indicators</h3>
-                  <div className="space-y-2">
-                    {INDICATORS.map(indicator => (
-                      <label key={indicator} className="flex items-center p-3 bg-gray-700 rounded-lg cursor-pointer hover:bg-gray-600">
-                        <input
-                          type="checkbox"
-                          checked={selectedIndicators.includes(indicator)}
-                          onChange={() => handleIndicatorChange(indicator)}
-                          className="h-4 w-4 rounded bg-gray-900 border-gray-600 text-cyan-600 focus:ring-cyan-500"
-                        />
-                        <span className="ml-3 text-gray-300">{indicator}</span>
-                      </label>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            )}
-          </div>
+          {isAnnotationStarted ? chatSection : <div className="bg-gray-800 rounded-lg p-6 h-[70vh] flex items-center justify-center text-gray-500"><p>Chat log will appear here.</p></div>}
+          {shouldShowSummary && (isAnnotationStarted ? summarySection : <div className="bg-gray-800 rounded-lg p-6 h-[70vh] flex items-center justify-center text-gray-500"><p>AI summary will appear here.</p></div>)}
+          {annotationForm}
         </div>
         
         <footer className="mt-8 text-center">
