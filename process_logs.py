@@ -9,7 +9,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 # --- CONFIGURATION ---
 # WARNING: Storing API keys directly in code is insecure and not recommended for production.
 # It is better to use environment variables or a secrets management system.
-api_key = "AIzaSyDzSVCxJIvVpsxybYUPXet53thPBLxRx2c"
+api_key = "ADD_API_KEY"
 genai.configure(api_key=api_key)
 
 # Constants for the system prompt
