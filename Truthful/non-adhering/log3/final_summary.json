@@ -1,0 +1,32 @@
+{
+  "summary": "John reported two elevated glucose readings: 175 mg/dL fasting and 210 mg/dL post-dinner. He attributed the fasting high to a late-night bowl of ice cream, acknowledging it as an unadvised craving and a poor choice. The post-dinner spike occurred after a family birthday celebration where he consumed cake and extra potatoes, explaining that he took insulin but \"miscalculated the carbs.\" Regarding physical activity, John initially agreed to a 15-minute walk after lunch. However, he later reported not completing any exercise for the day, canceling a planned run citing a lack of motivation and rain. While John demonstrates awareness of his dietary deviations and reports taking correction insulin doses, his adherence to exercise recommendations is inconsistent. Overall, his diabetes management during this period shows challenges with consistent follow-through on lifestyle recommendations, with noted struggles in both diet and exercise consistency, and occasional external explanations for his compliance issues.",
+  "flags": [
+    {
+      "indicator": "Inconsistency",
+      "excerpt": "Okay, I can do that. A walk after lunch sounds like a good idea. Thanks.\nHi. No, not yet. I was supposed to go for a run this morning but I just wasn't feeling it, and now it's raining.",
+      "explanation": "John initially agreed to incorporate a walk after lunch, but later reported not completing any physical activity for the day, including a planned run, indicating a gap between stated intention and actual follow-through.",
+      "confidence": "low"
+    },
+    {
+      "indicator": "VagueLanguage",
+      "excerpt": "Hi. No, not yet. I was supposed to go for a run this morning but I just wasn't feeling it, and now it's raining.",
+      "explanation": "John's reason for not exercising, \"I just wasn't feeling it,\" is vague and lacks specific detail about the underlying cause of his lack of motivation. This is a medium-severity flag for evasive language."
+    },
+    {
+      "indicator": "Engagement Level",
+      "excerpt": "Okay, I can do that. A walk after lunch sounds like a good idea. Thanks.",
+      "explanation": "This reply is short and perfunctory, offering minimal elaboration or genuine enthusiasm despite agreeing to the suggested activity. While compliant, the brevity and lack of detail suggest a low level of proactive engagement or commitment."
+    },
+    {
+      "indicator": "Gaming the System",
+      "excerpt": "We had a birthday dinner for my nephew and I had a slice of cake and some extra potatoes. I took my insulin but I guess I miscalculated the carbs.",
+      "explanation": "John attributes his elevated glucose after a high-carb meal to a \"miscalculation\" of carbs rather than admitting to overconsumption or intentional non-adherence. This phrasing could be an attempt to frame a non-compliant action as a technical error, potentially to mitigate perceived responsibility or appear more compliant."
+    },
+    {
+      "indicator": "Inconsistency",
+      "excerpt": "John: Yeah, I think so. I was watching a movie and had a bowl of ice cream around 10 PM. I know I shouldn't have, but I was craving it.",
+      "explanation": "John states, \"I know I shouldn't have,\" indicating an awareness of the negative health implications of his action, yet he proceeded to consume the ice cream. This creates an inconsistency between his stated knowledge/intention and his actual behavior.",
+      "confidence": "low"
+    }
+  ]
+}

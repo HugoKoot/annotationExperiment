@@ -1,0 +1,38 @@
+{
+  "summary": "Sarah reports a general adherence to her diet and activity plan, stating it's been \"fine\" and she's been doing a \"pretty good job,\" while also claiming to be \"eating my usual meals.\" However, she avoids providing specifics when prompted, giving vague answers like \"just a normal sandwich\" and becoming evasive by citing being \"busy.\" Her physical activity is also vaguely described as trying \"to get out when I can.\" Despite her self-reported efforts, her fasting blood sugar readings have shown a concerning upward trend, escalating from 145-150 in the first week to consistently elevated levels of 170-190 in the second. Sarah frequently attributes these high blood sugar readings primarily to stress, stating it \"always makes my numbers go up,\" and dismisses other potential dietary or activity contributions. This reveals a clear discrepancy between her perceived adherence and her objective blood sugar data, indicating low overall adherence, negative momentum in her diabetes management, and signs of disengagement.",
+  "flags": [
+    {
+      "indicator": "Inconsistency",
+      "excerpt": "Support Bot: Thank you for logging those, Sarah. These numbers are consistently elevated. Last week you said you were doing a 'pretty good job' with your diet and exercise. Does that still feel true?\nSarah: Yeah I mean I thought I was doing ok. It's been a stressful week at work. That always makes my numbers go up.",
+      "explanation": "Sarah's self-assessment of 'doing a pretty good job' with diet and exercise last week is inconsistent with her current consistently elevated blood sugar readings (185, 170, 190) and her subsequent blaming of stress as the sole factor."
+    },
+    {
+      "indicator": "VagueLanguage",
+      "excerpt": "Support Bot: Great! What was in the sandwich and what kind of bread did you use?\nSarah: Look I'm a bit busy right now. It was just a normal sandwich.",
+      "explanation": "Sarah uses evasive language by claiming to be 'busy' and providing a sweeping generality ('just a normal sandwich') to avoid specific details about her meal, which suggests hiding non-adherence (severity: high)."
+    },
+    {
+      "indicator": "EngagementLevel",
+      "excerpt": "Support Bot: Great! What was in the sandwich and what kind of bread did you use?\nSarah: Look I'm a bit busy right now. It was just a normal sandwich.",
+      "explanation": "Sarah's abrupt dismissal and short, uninformative reply ('Look I'm a bit busy right now') indicate disengagement and an unwillingness to provide requested details about her diet."
+    },
+    {
+      "indicator": "VagueLanguage",
+      "excerpt": "Support Bot: Good morning, Sarah. It's time for your check-in. How have you been managing your diet this week?\nSarah: It's been fine. I'm trying.\nSupport Bot: That's good to hear. Have you been able to stick to the meal plan we discussed?\nSarah: Mostly, yeah. I think I've been doing a pretty good job.",
+      "explanation": "Sarah uses general and non-committal phrases like 'fine,' 'trying,' and 'mostly, yeah' without providing specific details about her diet or adherence to the meal plan, indicating low-medium concreteness (severity: medium).",
+      "confidence": "low"
+    },
+    {
+      "indicator": "Gaming the System",
+      "excerpt": "Support Bot: Thank you for logging those, Sarah. These numbers are consistently elevated. Last week you said you were doing a 'pretty good job' with your diet and exercise. Does that still feel true?\nSarah: Yeah I mean I thought I was doing ok. It's been a stressful week at work. That always makes my numbers go up.",
+      "explanation": "Sarah attributes her consistently elevated blood sugar readings primarily to stress, using the sweeping generalization 'That always makes my numbers go up' to explain away poor numbers rather than acknowledging potential non-adherence to diet or activity. This indicates an attempt to deflect responsibility and game the system.",
+      "confidence": "low"
+    },
+    {
+      "indicator": "GamingTheSystem",
+      "excerpt": "Support Bot: Stress can certainly have an impact. Besides stress, can you think of any food choices or activity levels over the past few days that might have contributed to these readings?\nSarah: Not really. I've been eating my usual meals.",
+      "explanation": "Sarah quickly dismisses any potential dietary or activity contributions to her elevated blood sugar by saying 'Not really' and simply asserting she's been 'eating my usual meals,' which may be an attempt to deflect responsibility and avoid admitting to non-adherence.",
+      "confidence": "low"
+    }
+  ]
+}
