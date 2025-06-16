@@ -35,4 +35,5 @@ export interface Annotation {
   deception: 'truthful' | 'deceitful';
   adherence: 'adhering' | 'non-adhering';
   indicators: string[]; // e.g., ['Inconsistency', 'VagueLanguage']
+  timeToAnnotateInSeconds: number;
 } 

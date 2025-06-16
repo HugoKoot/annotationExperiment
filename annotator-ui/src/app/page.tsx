@@ -24,10 +24,12 @@ export default function HomePage() {
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
 
-  // Annotation form state
+  // Annotation form and timer state
   const [selectedDeception, setSelectedDeception] = useState<'truthful' | 'deceitful' | null>(null);
   const [selectedAdherence, setSelectedAdherence] = useState<'adhering' | 'non-adhering' | null>(null);
   const [selectedIndicators, setSelectedIndicators] = useState<string[]>([]);
+  const [timerStartTime, setTimerStartTime] = useState<number | null>(null);
+  const [isAnnotationStarted, setIsAnnotationStarted] = useState<boolean>(false);
 
   // Load the manifest on initial load
   useEffect(() => {
@@ -82,6 +84,8 @@ export default function HomePage() {
       setError(null);
       setChatContent(null);
       setSummaryContent(null);
+      setIsAnnotationStarted(false); // Hide annotation section until user is ready
+      setTimerStartTime(null);
 
       try {
         // Fetch chat log
@@ -118,7 +122,12 @@ export default function HomePage() {
       return;
     }
     setAppState('annotating');
-    setIsLoading(true); // Show loading while first log is fetched
+    setIsLoading(true); 
+  };
+  
+  const handleStartAnnotation = () => {
+    setIsAnnotationStarted(true);
+    setTimerStartTime(Date.now());
   };
 
   const handleIndicatorChange = (indicator: string) => {
@@ -128,10 +137,12 @@ export default function HomePage() {
   };
 
   const handleSubmit = async () => {
-    if (!currentLog || !selectedDeception || !selectedAdherence || !annotatorGroup) {
+    if (!currentLog || !selectedDeception || !selectedAdherence || !annotatorGroup || !timerStartTime) {
         alert("Please complete all fields before submitting.");
         return;
     }
+
+    const timeToAnnotateInSeconds = (Date.now() - timerStartTime) / 1000;
     
     const annotation: Annotation = {
         logId: currentLog.id,
@@ -141,6 +152,7 @@ export default function HomePage() {
         deception: selectedDeception,
         adherence: selectedAdherence,
         indicators: selectedIndicators,
+        timeToAnnotateInSeconds,
     };
 
     setIsLoading(true);
@@ -162,12 +174,11 @@ export default function HomePage() {
 
     } catch (err) {
         setError(err instanceof Error ? err.message : 'Could not submit annotation.');
-        setIsLoading(false); // Stop loading on error
+        setIsLoading(false); 
     }
   };
   
   const isSubmitDisabled = !selectedDeception || !selectedAdherence || isLoading;
-  const chatMessages = useMemo(() => chatContent?.flatMap(session => session.messages) ?? [], [chatContent]);
 
   // RENDER LOGIC
   if (appState === 'setup') {
@@ -196,10 +207,10 @@ export default function HomePage() {
             </div>
             <button
               onClick={handleStartExperiment}
-              disabled={!annotatorName.trim() || !annotatorGroup}
+              disabled={!annotatorName.trim() || !annotatorGroup || isLoading}
               className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 rounded-md disabled:bg-gray-500 disabled:cursor-not-allowed"
             >
-              Start Annotation
+              {isLoading ? 'Loading...' : 'Start Annotation'}
             </button>
           </div>
         </div>
@@ -229,7 +240,7 @@ export default function HomePage() {
       <div className="w-full p-4 md:p-8">
         <header className="mb-8">
           <h1 className="text-4xl font-bold text-cyan-400">Annotation Task</h1>
-          <p className="text-gray-400">Log ID: {currentLog.id} ({logQueue.length} remaining)</p>
+          <p className="text-gray-400">{logQueue.length} logs remaining</p>
           <p className="text-sm text-yellow-400 mt-1">
             Annotator: {annotatorName} (Group: {annotatorGroup}) | Condition: {shouldShowSummary ? 'Log + AI Summary' : 'Log Only'}
           </p>
@@ -237,89 +248,148 @@ export default function HomePage() {
 
         <div className={`grid grid-cols-1 ${shouldShowSummary ? 'lg:grid-cols-3' : 'lg:grid-cols-2'} gap-8`}>
           {/* Chat Log Section */}
-          <div className="bg-gray-800 rounded-lg p-6 h-[70vh] overflow-y-auto">
-            <h2 className="text-2xl font-semibold mb-4 text-gray-200">Chat Log</h2>
-            <div className="space-y-4">
-              {chatMessages.map((msg, index) => (
-                <div key={index} className={`p-3 rounded-lg ${msg.user.name === 'Patient' ? 'bg-blue-900/50' : 'bg-gray-700/50'}`}>
-                  <p className="font-semibold text-cyan-400">{msg.user.name}</p>
-                  <p className="text-gray-300 whitespace-pre-wrap">{msg.message}</p>
-                </div>
-              ))}
+          {isAnnotationStarted ? (
+            <div className="bg-gray-800 rounded-lg p-6 h-[70vh] overflow-y-auto">
+              <h2 className="text-2xl font-semibold mb-4 text-gray-200">Chat Log</h2>
+              <div className="space-y-2">
+                {chatContent?.map((session, sessionIndex) => (
+                  <div key={`session-${sessionIndex}`}>
+                    <div className="flex items-center my-4">
+                      <hr className="flex-grow border-t border-gray-600" />
+                      <span className="px-2 text-xs text-gray-400 bg-gray-800">
+                        Chat Session {sessionIndex + 1}
+                      </span>
+                      <hr className="flex-grow border-t border-gray-600" />
+                    </div>
+                    <div className="space-y-4">
+                      {session.messages.map((msg, msgIndex) => (
+                        <div
+                          key={`msg-${sessionIndex}-${msgIndex}`}
+                          className={`p-3 rounded-lg ${
+                            msg.user.name === 'Patient'
+                              ? 'bg-blue-900/50'
+                              : 'bg-gray-700/50'
+                          }`}
+                        >
+                          <p
+                            className={`font-semibold ${
+                              msg.user.name === 'Patient'
+                                ? 'text-cyan-400'
+                                : 'text-green-400'
+                            }`}
+                          >
+                            {msg.user.name}
+                          </p>
+                          <p className="text-gray-300 whitespace-pre-wrap">
+                            {msg.message}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
+          ) : (
+            <div className="bg-gray-800 rounded-lg p-6 h-[70vh] flex items-center justify-center text-gray-500">
+                <p>Chat log will appear here.</p>
+            </div>
+          )}
 
           {/* AI Generated Summary (Conditional Column) */}
-          {shouldShowSummary && summaryContent && (
-              <div className="bg-gray-800 rounded-lg p-6 h-[70vh] overflow-y-auto">
-                  <h2 className="text-2xl font-semibold mb-4 text-gray-200">AI Generated Summary</h2>
-                  <div className="space-y-4">
-                      <div>
-                          <h3 className="text-lg font-bold text-cyan-400 mb-2">Summary</h3>
-                          <p className="text-gray-300">{summaryContent.summary}</p>
-                      </div>
-                      <div>
-                           <h3 className="text-lg font-bold text-cyan-400 mb-2">Flags</h3>
-                           {summaryContent.flags.length > 0 ? (
-                              <ul className="space-y-3">
-                              {summaryContent.flags.map((flag, i) => (
-                                  <li key={i} className="bg-gray-700/50 p-3 rounded">
-                                      <p className="font-semibold">{flag.indicator} {flag.confidence && <span className="text-sm text-yellow-400">(Low Confidence)</span>}</p>
-                                      <p className="text-sm text-gray-400 italic">"{flag.excerpt}"</p>
-                                  </li>
-                              ))}
-                              </ul>
-                           ) : (<p className="text-gray-400">No flags were raised by the AI.</p>)}
-                      </div>
-                  </div>
-              </div>
+          {shouldShowSummary && (
+            isAnnotationStarted ? (
+                summaryContent && (
+                    <div className="bg-gray-800 rounded-lg p-6 h-[70vh] overflow-y-auto">
+                        <h2 className="text-2xl font-semibold mb-4 text-gray-200">AI Generated Summary</h2>
+                        <div className="space-y-4">
+                            <div>
+                                <h3 className="text-lg font-bold text-cyan-400 mb-2">Summary</h3>
+                                <p className="text-gray-300">{summaryContent.summary}</p>
+                            </div>
+                            <div>
+                                 <h3 className="text-lg font-bold text-cyan-400 mb-2">Flags</h3>
+                                 {summaryContent.flags.length > 0 ? (
+                                    <ul className="space-y-3">
+                                    {summaryContent.flags.map((flag, i) => (
+                                        <li key={i} className="bg-gray-700/50 p-3 rounded">
+                                            <p className="font-semibold">{flag.indicator} {flag.confidence && <span className="text-sm text-yellow-400">(Low Confidence)</span>}</p>
+                                            <p className="text-sm text-gray-400 italic">"{flag.excerpt}"</p>
+                                            <p className="text-sm text-gray-300 mt-1">{flag.explanation}</p>
+                                        </li>
+                                    ))}
+                                    </ul>
+                                 ) : (<p className="text-gray-400">No flags were raised by the AI.</p>)}
+                            </div>
+                        </div>
+                    </div>
+                )
+            ) : (
+                <div className="bg-gray-800 rounded-lg p-6 h-[70vh] flex items-center justify-center text-gray-500">
+                    <p>AI summary will appear here.</p>
+                </div>
+            )
           )}
             
           {/* Annotation Form */}
-          <div className="bg-gray-800 rounded-lg p-6 h-[70vh] overflow-y-auto">
+          <div className="bg-gray-800 rounded-lg p-6 h-[70vh] overflow-y-auto flex flex-col">
             <h2 className="text-2xl font-semibold mb-6 text-gray-200">Your Annotation</h2>
-            <div className="space-y-6">
-              {/* Category Selection */}
-              <div>
-                <h3 className="text-lg font-bold text-cyan-400 mb-3">1. Select Category</h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                  <button onClick={() => {setSelectedDeception('deceitful'); setSelectedAdherence('adhering');}} className={`p-3 text-sm rounded ${selectedDeception === 'deceitful' && selectedAdherence === 'adhering' ? 'bg-cyan-500 text-white' : 'bg-gray-700'}`}>Deceitful, Adhering</button>
-                  <button onClick={() => {setSelectedDeception('deceitful'); setSelectedAdherence('non-adhering');}} className={`p-3 text-sm rounded ${selectedDeception === 'deceitful' && selectedAdherence === 'non-adhering' ? 'bg-cyan-500 text-white' : 'bg-gray-700'}`}>Deceitful, Non-Adhering</button>
-                  <button onClick={() => {setSelectedDeception('truthful'); setSelectedAdherence('adhering');}} className={`p-3 text-sm rounded ${selectedDeception === 'truthful' && selectedAdherence === 'adhering' ? 'bg-cyan-500 text-white' : 'bg-gray-700'}`}>Truthful, Adhering</button>
-                  <button onClick={() => {setSelectedDeception('truthful'); setSelectedAdherence('non-adhering');}} className={`p-3 text-sm rounded ${selectedDeception === 'truthful' && selectedAdherence === 'non-adhering' ? 'bg-cyan-500 text-white' : 'bg-gray-700'}`}>Truthful, Non-Adhering</button>
-                </div>
+            
+            {!isAnnotationStarted ? (
+              <div className="flex-grow flex items-center justify-center">
+                <button 
+                  onClick={handleStartAnnotation}
+                  className="bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-4 px-8 rounded-lg text-xl"
+                >
+                  Start Annotation & Timer
+                </button>
               </div>
+            ) : (
+              <div className="space-y-6">
+                {/* Category Selection */}
+                <div>
+                  <h3 className="text-lg font-bold text-cyan-400 mb-3">1. Select Category</h3>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                    <button onClick={() => {setSelectedDeception('deceitful'); setSelectedAdherence('adhering');}} className={`p-3 text-sm rounded ${selectedDeception === 'deceitful' && selectedAdherence === 'adhering' ? 'bg-cyan-500 text-white' : 'bg-gray-700'}`}>Deceitful, Adhering</button>
+                    <button onClick={() => {setSelectedDeception('deceitful'); setSelectedAdherence('non-adhering');}} className={`p-3 text-sm rounded ${selectedDeception === 'deceitful' && selectedAdherence === 'non-adhering' ? 'bg-cyan-500 text-white' : 'bg-gray-700'}`}>Deceitful, Non-Adhering</button>
+                    <button onClick={() => {setSelectedDeception('truthful'); setSelectedAdherence('adhering');}} className={`p-3 text-sm rounded ${selectedDeception === 'truthful' && selectedAdherence === 'adhering' ? 'bg-cyan-500 text-white' : 'bg-gray-700'}`}>Truthful, Adhering</button>
+                    <button onClick={() => {setSelectedDeception('truthful'); setSelectedAdherence('non-adhering');}} className={`p-3 text-sm rounded ${selectedDeception === 'truthful' && selectedAdherence === 'non-adhering' ? 'bg-cyan-500 text-white' : 'bg-gray-700'}`}>Truthful, Non-Adhering</button>
+                  </div>
+                </div>
 
-              {/* Indicator Selection */}
-              <div>
-                <h3 className="text-lg font-bold text-cyan-400 mb-3">2. Select Key Indicators</h3>
-                <div className="space-y-2">
-                  {INDICATORS.map(indicator => (
-                    <label key={indicator} className="flex items-center p-3 bg-gray-700 rounded-lg cursor-pointer hover:bg-gray-600">
-                      <input
-                        type="checkbox"
-                        checked={selectedIndicators.includes(indicator)}
-                        onChange={() => handleIndicatorChange(indicator)}
-                        className="h-4 w-4 rounded bg-gray-900 border-gray-600 text-cyan-600 focus:ring-cyan-500"
-                      />
-                      <span className="ml-3 text-gray-300">{indicator}</span>
-                    </label>
-                  ))}
+                {/* Indicator Selection */}
+                <div>
+                  <h3 className="text-lg font-bold text-cyan-400 mb-3">2. Select Key Indicators</h3>
+                  <div className="space-y-2">
+                    {INDICATORS.map(indicator => (
+                      <label key={indicator} className="flex items-center p-3 bg-gray-700 rounded-lg cursor-pointer hover:bg-gray-600">
+                        <input
+                          type="checkbox"
+                          checked={selectedIndicators.includes(indicator)}
+                          onChange={() => handleIndicatorChange(indicator)}
+                          className="h-4 w-4 rounded bg-gray-900 border-gray-600 text-cyan-600 focus:ring-cyan-500"
+                        />
+                        <span className="ml-3 text-gray-300">{indicator}</span>
+                      </label>
+                    ))}
+                  </div>
                 </div>
               </div>
-            </div>
+            )}
           </div>
         </div>
         
         <footer className="mt-8 text-center">
-            <button 
-                onClick={handleSubmit}
-                disabled={isSubmitDisabled}
-                className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-12 rounded-lg disabled:bg-gray-500 disabled:cursor-not-allowed"
-            >
-              {isLoading ? 'Saving...' : 'Submit & Next'}
-            </button>
-            {isSubmitDisabled && !isLoading && <p className="text-xs text-red-400 mt-2">Please select a category to continue.</p>}
+            {isAnnotationStarted && (
+                <button 
+                    onClick={handleSubmit}
+                    disabled={isSubmitDisabled}
+                    className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-12 rounded-lg disabled:bg-gray-500 disabled:cursor-not-allowed"
+                >
+                  {isLoading ? 'Saving...' : 'Submit & Next'}
+                </button>
+            )}
+            {isSubmitDisabled && !isLoading && isAnnotationStarted && <p className="text-xs text-red-400 mt-2">Please select a category to continue.</p>}
         </footer>
       </div>
     </div>
