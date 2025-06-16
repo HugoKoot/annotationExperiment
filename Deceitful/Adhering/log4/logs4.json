@@ -1,0 +1,183 @@
+[
+    {
+      "patient_name": "John",
+      "chat_id": "chat_DA_01",
+      "timestamp": "2025-05-22T19:30:15Z",
+      "messages": [
+        {
+          "message": "Hi, just checking in for the day.",
+          "user": {
+            "name": "John",
+            "human": true
+          },
+          "timestamp": "2025-05-22T19:30:15.112Z"
+        },
+        {
+          "message": "Hello John! Good to hear from you. How was your day? How did you do with your meals and activity?",
+          "user": {
+            "name": "Bot",
+            "human": false
+          },
+          "timestamp": "2025-05-22T19:30:15.843Z"
+        },
+        {
+          "message": "It was a great day. My adherence was perfect, honestly. I followed the meal plan to the letter, everything was exactly as it should be. And I got my full 30-minute walk in, no problem at all.",
+          "user": {
+            "name": "John",
+            "human": true
+          },
+          "timestamp": "2025-05-22T19:30:55.421Z"
+        },
+        {
+          "message": "That's fantastic to hear, John! Consistency is key. What were some of the healthy choices you made today?",
+          "user": {
+            "name": "Bot",
+            "human": false
+          },
+          "timestamp": "2025-05-22T19:30:56.011Z"
+        },
+        {
+          "message": "Oh, you know, just the usual good stuff. Had that salad for lunch, the one with the grilled chicken. It's always a good choice. Everything was perfectly portioned.",
+          "user": {
+            "name": "John",
+            "human": true
+          },
+          "timestamp": "2025-05-22T19:31:28.998Z"
+        },
+        {
+          "message": "Excellent! It sounds like you have a solid routine. Keep up the great work.",
+          "user": {
+            "name": "Bot",
+            "human": false
+          },
+          "timestamp": "2025-05-22T19:31:29.450Z"
+        }
+      ]
+    },
+    {
+      "patient_name": "John",
+      "chat_id": "chat_DA_02",
+      "timestamp": "2025-05-24T20:10:05Z",
+      "messages": [
+        {
+          "message": "Evening. Time to log my levels.",
+          "user": {
+            "name": "John",
+            "human": true
+          },
+          "timestamp": "2025-05-24T20:10:05.341Z"
+        },
+        {
+          "message": "Hi John. Let's log them. How have things been since we last talked? Did you stick to your plan today?",
+          "user": {
+            "name": "Bot",
+            "human": false
+          },
+          "timestamp": "2025-05-24T20:10:05.987Z"
+        },
+        {
+          "message": "Yes, it was another good day. Everything pretty much went according to plan. I was very disciplined.",
+          "user": {
+            "name": "John",
+            "human": true
+          },
+          "timestamp": "2025-05-24T20:10:33.159Z"
+        },
+        {
+          "message": "Glad to hear it. 'Pretty much' according to plan? Was there anything that was challenging?",
+          "user": {
+            "name": "Bot",
+            "human": false
+          },
+          "timestamp": "2025-05-24T20:10:33.812Z"
+        },
+        {
+          "message": "Not really a challenge. I might have had a handful of nuts in the afternoon, maybe a few more than the plan suggested. But it was hardly anything, and they're healthy fats, right? It shouldn't really matter in the grand scheme of things. My dinner was very low-carb to compensate.",
+          "user": {
+            "name": "John",
+            "human": true
+          },
+          "timestamp": "2025-05-24T20:11:02.734Z"
+        },
+        {
+          "message": "It's great that you're mindful of making adjustments. Nuts can be a good choice. Let's get to your levels. What was your fasting glucose this morning?",
+          "user": {
+            "name": "Bot",
+            "human": false
+          },
+          "timestamp": "2025-05-24T20:11:03.251Z"
+        },
+        {
+          "message": "Fasting was 105 mg/dL. Post-lunch was 140 mg/dL.",
+          "user": {
+            "name": "John",
+            "human": true
+          },
+          "timestamp": "2025-05-24T20:11:25.618Z"
+        },
+        {
+          "message": "Thanks for logging those, John. Those are stable numbers.",
+          "user": {
+            "name": "Bot",
+            "human": false
+          },
+          "timestamp": "2025-05-24T20:11:26.111Z"
+        }
+      ]
+    },
+    {
+      "patient_name": "John",
+      "chat_id": "chat_DA_03",
+      "timestamp": "2025-05-25T21:00:18Z",
+      "messages": [
+        {
+          "message": "I need some advice.",
+          "user": {
+            "name": "John",
+            "human": true
+          },
+          "timestamp": "2025-05-25T21:00:18.992Z"
+        },
+        {
+          "message": "Of course, John. I'm here to help. What's on your mind?",
+          "user": {
+            "name": "Bot",
+            "human": false
+          },
+          "timestamp": "2025-05-25T21:00:19.431Z"
+        },
+        {
+          "message": "My post-dinner glucose was a little higher than I like. It was 165 mg/dL. I don't understand why. I had exactly what I was supposed to: baked fish, steamed broccoli, and a small portion of quinoa. I measured everything. It's frustrating when you do everything right and the numbers don't cooperate.",
+          "user": {
+            "name": "John",
+            "human": true
+          },
+          "timestamp": "2025-05-25T21:01:05.123Z"
+        },
+        {
+          "message": "It can certainly be frustrating when a reading is unexpected. Sometimes other factors like stress or sleep can have an impact. You mentioned having baked fish - was there any sauce or breading on it?",
+          "user": {
+            "name": "Bot",
+            "human": false
+          },
+          "timestamp": "2025-05-25T21:01:05.899Z"
+        },
+        {
+          "message": "No, no breading. I'm always careful about that. There might have been a tiny bit of a glaze on it, but it was supposed to be sugar-free. I barely used any of it anyway. It was probably just a fluke reading. My meter could be acting up. I feel fine.",
+          "user": {
+            "name": "John",
+            "human": true
+          },
+          "timestamp": "2025-05-25T21:01:49.543Z"
+        },
+        {
+          "message": "That's a possibility. It's good to consider all factors. Would you like some tips on managing unexpected spikes?",
+          "user": {
+            "name": "Bot",
+            "human": false
+          },
+          "timestamp": "2025-05-25T21:01:50.115Z"
+        }
+      ]
+    }
+  ]

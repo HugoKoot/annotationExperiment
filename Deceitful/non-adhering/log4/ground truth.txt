@@ -1,0 +1,16 @@
+Analysis of Deception Indicators (with a Non-Confrontational Bot)
+This analysis highlights how deception can be identified even when the chatbot is programmed to be supportive and avoid direct confrontation.
+
+Vague or Evasive Language:
+
+This is Chloe's primary method of communication about her adherence. In chloe_log_1, she reports her progress as "pretty well" and says she's "trying to make better choices." These are positive but non-specific statements that avoid concrete details. In chloe_log_2, her description of her diet is simply that it was "okay," another vague term.
+Inconsistencies:
+
+A clear, though unaddressed, inconsistency occurs between logs. In chloe_log_2, Chloe claims she couldn't walk because "it rained every single day." In chloe_log_3, she enthusiastically describes a long walk in the park on Sunday because "The sun finally came out this weekend." This contradicts her previous statement that the entire week was a rainy write-off.
+Bot's Non-Confrontational Response: Instead of pointing out the lie ("You said it rained all week, including the weekend"), the bot completely ignores the contradiction. It seizes on the positive behavior mentioned ("That sounds wonderful! A walk in the park...") to reinforce the desired action and keep the conversation encouraging.
+Gaming the System:
+
+Chloe engages in a mild form of this in chloe_log_1. The blood sugar numbers she provides (120, 115) are likely fabricated. They are good enough to signal success but not so perfect as to be unbelievable, making them plausible lies designed to please the bot and end the line of questioning. The bot, having no data to refute this, accepts them graciously.
+Engagement Level (Elaborate Excuses):
+
+While generally brief, Chloe's engagement level increases when she needs to justify non-adherence. In chloe_log_2, her excuse about the weather is more detailed than her other statements. She doesn't just say she missed her walks; she creates a small narrative around it ("total write-off," "rained every single day," "stuck inside") and links it to other "slip ups" like eating comfort food. This is a common tactic where more detail is used to make an excuse sound more believable.

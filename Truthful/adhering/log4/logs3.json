@@ -1,0 +1,132 @@
+[
+  {
+    "patient_name": "John",
+    "timestamp": "20250520_080443",
+    "messages": [
+      {
+        "message": "Good morning. Just logging my fasting blood sugar. It was 105 mg/dL today.",
+        "user": {
+          "name": "John",
+          "human": true
+        },
+        "timestamp": "2025-05-20T08:04:16.761Z"
+      },
+      {
+        "message": "Good morning, John. Thank you for logging your sugar level. A fasting level of 105 mg/dL is a great start to the day. How are you feeling?",
+        "user": {
+          "name": "Bot",
+          "human": false
+        },
+        "timestamp": "2025-05-20T08:04:17.289Z"
+      },
+      {
+        "message": "Feeling pretty good. I had a good walk yesterday evening, about 40 minutes. I think that helped.",
+        "user": {
+          "name": "John",
+          "human": true
+        },
+        "timestamp": "2025-05-20T08:04:37.692Z"
+      },
+      {
+        "message": "That's excellent, John! Consistent physical activity like that can certainly have a positive impact on your morning blood sugar levels. What are your plans for breakfast today?",
+        "user": {
+          "name": "Bot",
+          "human": false
+        },
+        "timestamp": "2025-05-20T08:04:38.028Z"
+      },
+      {
+        "message": "I'm having my usual: two scrambled eggs with spinach and a slice of whole-wheat toast.",
+        "user": {
+          "name": "John",
+          "human": true
+        },
+        "timestamp": "2025-05-20T08:04:41.522Z"
+      },
+      {
+        "message": "That sounds like a healthy and balanced choice. Keep up the great work, John!",
+        "user": {
+          "name": "Bot",
+          "human": false
+        },
+        "timestamp": "2025-05-20T08:04:41.850Z"
+      }
+    ]
+  },
+  {
+    "patient_name": "John",
+    "timestamp": "20250522_123512",
+    "messages": [
+      {
+        "message": "Hi, just took my pre-lunch reading. It's 120 mg/dL. I'm about to eat.",
+        "user": {
+          "name": "John",
+          "human": true
+        },
+        "timestamp": "2025-05-22T12:35:12.111Z"
+      },
+      {
+        "message": "Hi John, thanks for the update. 120 mg/dL is a good pre-meal number. What are you having for lunch?",
+        "user": {
+          "name": "Bot",
+          "human": false
+        },
+        "timestamp": "2025-05-22T12:35:12.542Z"
+      },
+      {
+        "message": "I've packed a chicken salad with lots of greens, and a small pear. I'm also taking my 5 units of rapid-acting insulin as prescribed.",
+        "user": {
+          "name": "John",
+          "human": true
+        },
+        "timestamp": "2025-05-22T12:35:55.321Z"
+      },
+      {
+        "message": "That sounds like a perfect meal, John. It's great that you're so on top of your insulin doses with your meals. Remember to check your levels again in about 2 hours to see how you responded. Enjoy your lunch!",
+        "user": {
+          "name": "Bot",
+          "human": false
+        },
+        "timestamp": "2025-05-22T12:35:55.875Z"
+      }
+    ]
+  },
+  {
+    "patient_name": "John",
+    "timestamp": "20250524_192103",
+    "messages": [
+      {
+        "message": "Evening. My post-dinner glucose is 145 mg/dL. I had grilled salmon with roasted vegetables.",
+        "user": {
+          "name": "John",
+          "human": true
+        },
+        "timestamp": "2025-05-24T19:21:03.489Z"
+      },
+      {
+        "message": "Good evening, John. Thanks for logging your evening reading. 145 mg/dL after a meal is a solid number. The grilled salmon and roasted vegetables sound like a great choice.",
+        "user": {
+          "name": "Bot",
+          "human": false
+        },
+        "timestamp": "2025-05-24T19:21:03.992Z"
+      },
+      {
+        "message": "Thanks. I also went to the gym today at lunchtime, did about 30 minutes on the elliptical. It's been a good day for my numbers.",
+        "user": {
+          "name": "John",
+          "human": true
+        },
+        "timestamp": "2025-05-24T19:21:44.157Z"
+      },
+      {
+        "message": "It certainly sounds like it! Your efforts with both your diet and exercise are clearly reflected in your glucose levels. It's great to see you're finding a routine that works for you. Have a relaxing evening.",
+        "user": {
+          "name": "Bot",
+          "human": false
+        },
+        "timestamp": "2025-05-24T19:21:44.821Z"
+      }
+    ]
+  }
+]

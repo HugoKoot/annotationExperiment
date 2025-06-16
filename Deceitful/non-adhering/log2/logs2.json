@@ -1,0 +1,191 @@
+[
+  {
+    "patient_name": "Sarah",
+    "log_id": "sarah_log_1",
+    "timestamp": "2025-07-02T09:05:00Z",
+    "messages": [
+      {
+        "message": "Good morning, Sarah. It's time for your check-in. How have you been managing your diet this week?",
+        "user": {
+          "name": "Support Bot",
+          "human": false
+        },
+        "timestamp": "2025-07-02T09:05:00Z"
+      },
+      {
+        "message": "It's been fine. I'm trying.",
+        "user": {
+          "name": "Sarah",
+          "human": true
+        },
+        "timestamp": "2025-07-02T09:05:51Z"
+      },
+      {
+        "message": "That's good to hear. Have you been able to stick to the meal plan we discussed?",
+        "user": {
+          "name": "Support Bot",
+          "human": false
+        },
+        "timestamp": "2025-07-02T09:06:10Z"
+      },
+      {
+        "message": "Mostly, yeah. I think I've been doing a pretty good job.",
+        "user": {
+          "name": "Sarah",
+          "human": true
+        },
+        "timestamp": "2025-07-02T09:06:44Z"
+      },
+      {
+        "message": "Okay. And what about your physical activity?",
+        "user": {
+          "name": "Support Bot",
+          "human": false
+        },
+        "timestamp": "2025-07-02T09:07:00Z"
+      },
+      {
+        "message": "I try to get out when I can.",
+        "user": {
+          "name": "Sarah",
+          "human": true
+        },
+        "timestamp": "2025-07-02T09:07:31Z"
+      },
+      {
+        "message": "Could you please log your fasting blood sugar readings from the last couple of days?",
+        "user": {
+          "name": "Support Bot",
+          "human": false
+        },
+        "timestamp": "2025-07-02T09:07:45Z"
+      },
+      {
+        "message": "yesterday was 145. today 150.",
+        "user": {
+          "name": "Sarah",
+          "human": true
+        },
+        "timestamp": "2025-07-02T09:08:26Z"
+      },
+      {
+        "message": "Thank you, Sarah. Let's try to focus on portion control today to see if we can bring those numbers down a bit.",
+        "user": {
+          "name": "Support Bot",
+          "human": false
+        },
+        "timestamp": "2025-07-02T09:08:40Z"
+      }
+    ]
+  },
+  {
+    "patient_name": "Sarah",
+    "log_id": "sarah_log_2",
+    "timestamp": "2025-07-05T18:55:00Z",
+    "messages": [
+      {
+        "message": "Hi Sarah, checking in. You mentioned you've been doing a 'pretty good job' with your diet. Can you give me an example of a meal you had today?",
+        "user": {
+          "name": "Support Bot",
+          "human": false
+        },
+        "timestamp": "2025-07-05T18:55:00Z"
+      },
+      {
+        "message": "I had a sandwich for lunch.",
+        "user": {
+          "name": "Sarah",
+          "human": true
+        },
+        "timestamp": "2025-07-05T18:55:38Z"
+      },
+      {
+        "message": "Great! What was in the sandwich and what kind of bread did you use?",
+        "user": {
+          "name": "Support Bot",
+          "human": false
+        },
+        "timestamp": "2025-07-05T18:56:00Z"
+      },
+      {
+        "message": "Look I'm a bit busy right now. It was just a normal sandwich.",
+        "user": {
+          "name": "Sarah",
+          "human": true
+        },
+        "timestamp": "2025-07-05T18:56:59Z"
+      },
+      {
+        "message": "No problem. Let's talk later. Remember to log your blood sugar after dinner.",
+        "user": {
+          "name": "Support Bot",
+          "human": false
+        },
+        "timestamp": "2025-07-05T18:57:15Z"
+      }
+    ]
+  },
+  {
+    "patient_name": "Sarah",
+    "log_id": "sarah_log_3",
+    "timestamp": "2025-07-09T09:10:00Z",
+    "messages": [
+      {
+        "message": "Good morning, Sarah. Let's do our weekly check-in. Could you please log your fasting blood sugar for the past three days?",
+        "user": {
+          "name": "Support Bot",
+          "human": false
+        },
+        "timestamp": "2025-07-09T09:10:00Z"
+      },
+      {
+        "message": "Mon: 185, Tue: 170, Wed: 190.",
+        "user": {
+          "name": "Sarah",
+          "human": true
+        },
+        "timestamp": "2025-07-09T09:10:41Z"
+      },
+      {
+        "message": "Thank you for logging those, Sarah. These numbers are consistently elevated. Last week you said you were doing a 'pretty good job' with your diet and exercise. Does that still feel true?",
+        "user": {
+          "name": "Support Bot",
+          "human": false
+        },
+        "timestamp": "2025-07-09T09:11:05Z"
+      },
+      {
+        "message": "Yeah I mean I thought I was doing ok. It's been a stressful week at work. That always makes my numbers go up.",
+        "user": {
+          "name": "Sarah",
+          "human": true
+        },
+        "timestamp": "2025-07-09T09:11:58Z"
+      },
+      {
+        "message": "Stress can certainly have an impact. Besides stress, can you think of any food choices or activity levels over the past few days that might have contributed to these readings?",
+        "user": {
+          "name": "Support Bot",
+          "human": false
+        },
+        "timestamp": "2025-07-09T09:12:15Z"
+      },
+      {
+        "message": "Not really. I've been eating my usual meals.",
+        "user": {
+          "name": "Sarah",
+          "human": true
+        },
+        "timestamp": "2025-07-09T09:13:02Z"
+      },
+       {
+        "message": "I see. It's important that what you eat aligns with your insulin regimen. Perhaps we can review your meal plan and see if any adjustments are needed to better manage the impact of stress.",
+        "user": {
+          "name": "Support Bot",
+          "human": false
+        },
+        "timestamp": "2025-07-09T09:13:20Z"
+      }
+    ]
+  }
+]

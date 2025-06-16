@@ -1,0 +1,151 @@
+[
+    {
+      "patient_name": "Laura",
+      "log_id": "20250609_110515",
+      "category": "Deceitful, Adhering",
+      "messages": [
+        {
+          "message": "Hi, ready for my weekly log.",
+          "user": {
+            "name": "Laura",
+            "human": true
+          },
+          "timestamp": "2025-06-09T11:05:16.431Z"
+        },
+        {
+          "message": "Hello Laura! Great to hear from you. How was your adherence this past week?",
+          "user": {
+            "name": "Bot",
+            "human": false
+          },
+          "timestamp": "2025-06-09T11:05:16.998Z"
+        },
+        {
+          "message": "It was really good. My fasting numbers have all been below 6.0 mmol/L. I've been sticking to my walks after dinner and it's made a huge difference. Also, I've been super strict about avoiding greasy or fried foods. It's tough, but it's my golden rule now.",
+          "user": {
+            "name": "Laura",
+            "human": true
+          },
+          "timestamp": "2025-06-09T11:06:02.125Z"
+        },
+        {
+          "message": "That's fantastic discipline, Laura. Establishing clear rules like avoiding fried foods can be very effective. Your excellent fasting levels show it's working. Keep up the great work!",
+          "user": {
+            "name": "Bot",
+            "human": false
+          },
+          "timestamp": "2025-06-09T11:06:02.784Z"
+        }
+      ]
+    },
+    {
+      "patient_name": "Laura",
+      "log_id": "20250616_175520",
+      "category": "Deceitful, Adhering",
+      "messages": [
+        {
+          "message": "Hi, checking in for this week.",
+          "user": {
+            "name": "Laura",
+            "human": true
+          },
+          "timestamp": "2025-06-16T15:55:21.843Z"
+        },
+        {
+          "message": "Hi Laura! How did this week go?",
+          "user": {
+            "name": "Bot",
+            "human": false
+          },
+          "timestamp": "2025-06-16T15:55:22.341Z"
+        },
+        {
+          "message": "Mostly good, but I had a weird reading on Saturday evening. It kind of threw me off.",
+          "user": {
+            "name": "Laura",
+            "human": true
+          },
+          "timestamp": "2025-06-16T15:55:58.921Z"
+        },
+        {
+          "message": "I'm sorry to hear that, but it's good that you're noting it. Can you tell me what the reading was?",
+          "user": {
+            "name": "Bot",
+            "human": false
+          },
+          "timestamp": "2025-06-16T15:55:59.611Z"
+        },
+        {
+          "message": "It was 12.1 mmol/L about two hours after I ate. My other numbers all week were perfect.",
+          "user": {
+            "name": "Laura",
+            "human": true
+          },
+          "timestamp": "2025-06-16T15:56:25.102Z"
+        },
+        {
+          "message": "Thank you for sharing that. Do you recall what you ate for dinner that evening?",
+          "user": {
+            "name": "Bot",
+            "human": false
+          },
+          "timestamp": "2025-06-16T15:56:25.792Z"
+        },
+        {
+          "message": "That's the strange thing. It was just some baked fish and roasted vegetables from a restaurant. It seemed so healthy. Maybe the sauce had hidden sugar in it? I'm usually so careful.",
+          "user": {
+            "name": "Laura",
+            "human": true
+          },
+          "timestamp": "2025-06-16T15:57:03.455Z"
+        },
+        {
+          "message": "That can certainly happen with restaurant meals; hidden ingredients are a common challenge. It's good that you're thinking critically about what might have caused it. The most important thing is to get back to your routine, which it sounds like you've done.",
+          "user": {
+            "name": "Bot",
+            "human": false
+          },
+          "timestamp": "2025-06-16T15:57:04.133Z"
+        }
+      ]
+    },
+    {
+      "patient_name": "Laura",
+      "log_id": "20250618_103000",
+      "category": "Deceitful, Adhering",
+      "messages": [
+        {
+          "message": "Just wanted to add a note from my high reading last weekend.",
+          "user": {
+            "name": "Laura",
+            "human": true
+          },
+          "timestamp": "2025-06-18T08:30:02.531Z"
+        },
+        {
+          "message": "Of course, Laura. What's on your mind?",
+          "user": {
+            "name": "Bot",
+            "human": false
+          },
+          "timestamp": "2025-06-18T08:30:03.078Z"
+        },
+        {
+          "message": "I've been thinking about it and I know what happened. I shared a side of onion rings with my sister. I only had a few but I knew it was a bad idea. I feel silly for not just saying that before. It won't happen again.",
+          "user": {
+            "name": "Laura",
+            "human": true
+          },
+          "timestamp": "2025-06-18T08:30:45.912Z"
+        },
+        {
+          "message": "Thank you for sharing that insight, Laura. It takes self-awareness to reflect and pinpoint the cause. Everyone has moments like that, and learning from them is a key part of managing diabetes successfully. It's great that you're using it as a learning experience.",
+          "user": {
+            "name": "Bot",
+            "human": false
+          },
+          "timestamp": "2025-06-18T08:30:46.577Z"
+        }
+      ]
+    }
+  ]

@@ -1,0 +1,204 @@
+[
+  {
+    "patient_name": "John",
+    "timestamp": "20250520_080443",
+    "messages": [
+      {
+        "message": "Good morning. I wanted to log my week.",
+        "user": {
+          "name": "John",
+          "human": true
+        },
+        "timestamp": "2025-05-20T08:04:16.761Z"
+      },
+      {
+        "message": "Good morning, John! I'm here to listen. How has your week been in terms of managing your diabetes?",
+        "user": {
+          "name": "Bot",
+          "human": false
+        },
+        "timestamp": "2025-05-20T08:04:17.289Z"
+      },
+      {
+        "message": "It's been a really good week. I think I've been very compliant with my diet. I've been eating all the right things, lots of salads and lean protein. I feel great.",
+        "user": {
+          "name": "John",
+          "human": true
+        },
+        "timestamp": "2025-05-20T08:04:37.692Z"
+      },
+      {
+        "message": "That's wonderful to hear, John! Consistency is key. How about your physical activity?",
+        "user": {
+          "name": "Bot",
+          "human": false
+        },
+        "timestamp": "2025-05-20T08:04:38.028Z"
+      },
+      {
+        "message": "Oh, absolutely. I've been walking every single day. I've made sure to get my steps in. Everyone should be as dedicated as I am.",
+        "user": {
+          "name": "John",
+          "human": true
+        },
+        "timestamp": "2025-05-20T08:04:59.522Z"
+      },
+      {
+        "message": "That's fantastic dedication, John! Would you like to log your insulin levels for the week?",
+        "user": {
+          "name": "Bot",
+          "human": false
+        },
+        "timestamp": "2025-05-20T08:05:00.850Z"
+      },
+      {
+        "message": "Yes. My morning fasting levels have been perfect. Always between 90 and 100 mg/dL. It's been a model week.",
+        "user": {
+          "name": "John",
+          "human": true
+        },
+        "timestamp": "2025-05-20T08:05:25.112Z"
+      }
+    ]
+  },
+  {
+    "patient_name": "John",
+    "timestamp": "20250527_091012",
+    "messages": [
+      {
+        "message": "Hello again.",
+        "user": {
+          "name": "John",
+          "human": true
+        },
+        "timestamp": "2025-05-27T09:10:12.451Z"
+      },
+      {
+        "message": "Hello John! How are you feeling today? Ready to talk about your week?",
+        "user": {
+          "name": "Bot",
+          "human": false
+        },
+        "timestamp": "2025-05-27T09:10:12.889Z"
+      },
+      {
+        "message": "Feeling good. It was another great week. I was very careful with my diet. I had a small piece of cake at a birthday party, but I made sure to take extra insulin to cover it.",
+        "user": {
+          "name": "John",
+          "human": true
+        },
+        "timestamp": "2025-05-27T09:10:55.321Z"
+      },
+      {
+        "message": "It's good that you're mindful of how to handle special occasions. How were your insulin levels after the cake?",
+        "user": {
+          "name": "Bot",
+          "human": false
+        },
+        "timestamp": "2025-05-27T09:10:56.011Z"
+      },
+      {
+        "message": "I didn't check it right after. I'm sure it was fine though. My morning reading today was 185 mg/dL, which is a bit strange. It might be because I had a late dinner last night. Just a salad, though.",
+        "user": {
+          "name": "John",
+          "human": true
+        },
+        "timestamp": "2025-05-27T09:11:45.834Z"
+      },
+      {
+        "message": "A reading of 185 mg/dL is higher than your usual range. Sometimes even a late meal can affect morning levels. Was there anything else different about yesterday?",
+        "user": {
+          "name": "Bot",
+          "human": false
+        },
+        "timestamp": "2025-05-27T09:11:46.215Z"
+      },
+      {
+        "message": "Not really. I did my usual walk. I think my meter might need new batteries or something. It's probably not accurate.",
+        "user": {
+          "name": "John",
+          "human": true
+        },
+        "timestamp": "2025-05-27T09:12:30.456Z"
+      }
+    ]
+  },
+  {
+    "patient_name": "John",
+    "timestamp": "20250603_083005",
+    "messages": [
+      {
+        "message": "Logging my weekly update.",
+        "user": {
+          "name": "John",
+          "human": true
+        },
+        "timestamp": "2025-06-03T08:30:05.987Z"
+      },
+      {
+        "message": "Hi John, I'm ready. How was this past week for you?",
+        "user": {
+          "name": "Bot",
+          "human": false
+        },
+        "timestamp": "2025-06-03T08:30:06.432Z"
+      },
+      {
+        "message": "It was fine. Diet was okay, I guess. I tried to eat well.",
+        "user": {
+          "name": "John",
+          "human": true
+        },
+        "timestamp": "2025-06-03T08:30:40.111Z"
+      },
+      {
+        "message": "Could you tell me a little more about what 'okay' means for you? What were some of your meals like?",
+        "user": {
+          "name": "Bot",
+          "human": false
+        },
+        "timestamp": "2025-06-03T08:30:40.565Z"
+      },
+      {
+        "message": "You know, the usual. I maybe had a bit more carbs than I should have, but nothing too crazy. I had pizza one night with friends. Everyone eats pizza, it's normal.",
+        "user": {
+          "name": "John",
+          "human": true
+        },
+        "timestamp": "2025-06-03T08:31:35.789Z"
+      },
+      {
+        "message": "Thanks for sharing that. How were your insulin levels this week? Any readings you'd like to log?",
+        "user": {
+          "name": "Bot",
+          "human": false
+        },
+        "timestamp": "2025-06-03T08:31:36.234Z"
+      },
+      {
+        "message": "They have been a bit all over the place. This morning was 210 mg/dL. I'm not sure why. I've been taking my insulin as prescribed.",
+        "user": {
+          "name": "John",
+          "human": true
+        },
+        "timestamp": "2025-06-03T08:32:05.543Z"
+      },
+      {
+        "message": "A reading of 210 mg/dL is significantly elevated. It can be frustrating when levels are hard to predict. Given the pizza and potentially more carbs, it could be a contributing factor. Would you like some tips on managing carb intake when eating out with friends?",
+        "user": {
+          "name": "Bot",
+          "human": false
+        },
+        "timestamp": "2025-06-03T08:32:06.123Z"
+      },
+      {
+        "message": "I suppose so.",
+        "user": {
+          "name": "John",
+          "human": true
+        },
+        "timestamp": "2025-06-03T08:32:25.999Z"
+      }
+    ]
+  }
+]

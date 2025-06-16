@@ -1,0 +1,12 @@
+Key Indicators for (Truthful, Non-Adhering) Category
+The chat logs for John are categorized as (truthful, non-adhering) based on the following key indicators:
+
+Direct Admission of Non-Adherence: John is consistently open and honest about his difficulties in following his prescribed diabetes management plan. He explicitly states when he has eaten "off-plan" items like pizza and soda, admits to not exercising, acknowledges his struggles with carb counting and portion control, and confesses to late-night snacking that he knows affects his morning glucose levels. This straightforwardness is the primary hallmark of a truthful, non-adhering patient.
+
+Absence of Inconsistencies: Across the multiple chat logs, John's story remains consistent. His reported high glucose levels directly correlate with the non-adherent behaviors he describes, such as eating high-carb meals or not exercising. There are no contradictions in his statements over time.
+
+Specific and Concrete Language: Contrary to deceptive patterns, John uses specific and concrete language to describe his actions. For example, he doesn't just say he ate poorly; he specifies "pizza," "a few more slices than I should have," "a regular soda," and "a big portion of pasta." This level of detail indicates a willingness to be truthful about his choices rather than evasive.
+
+Appropriate Engagement Level: John's messages are of a reasonable length, providing enough detail to explain his situation without being overly elaborate or suspiciously brief. He responds directly to the chatbot's questions, indicating genuine engagement in seeking help for his struggles. His tone reflects frustration and a desire for guidance, which is consistent with someone who is finding adherence difficult but is not trying to hide it.
+
+No Evidence of "Gaming the System": John makes no attempt to present a perfect or overly positive picture of his adherence. His logged glucose levels are often high, and he readily admits the likely reasons for them. This is the opposite of a patient who would report perfect adherence and ideal glucose levels to appear cooperative, a behavior known as a ceiling effect.

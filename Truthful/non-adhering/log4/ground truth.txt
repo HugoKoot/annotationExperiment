@@ -1,0 +1,13 @@
+Key Indicator Analysis: (Truthful, Non-Adhering)
+The chatlogs for John were designed to reflect a patient who is honest about his struggles with diabetes management, and therefore non-adherent to his prescribed lifestyle. The following key indicators were used:
+
+Direct and Specific Language (Truthfulness): John does not use vague or evasive language. His admissions of non-adherence are direct and include concrete details.
+
+In the first chat, he explicitly states, "I went to a birthday party on Saturday and had a big piece of cake and some pizza." This is a clear, unambiguous admission of a dietary lapse, rather than a hedged statement like "I might have eaten something off-plan."
+In the second chat, he provides a specific reason for his lack of exercise: "I'm supposed to walk for 30 minutes every day... I've only managed it once this week." He quantifies his non-adherence, which adds to the credibility of his statement.
+In the third chat, he pinpoints the exact cause of his high blood sugar: "I think I misjudged the carbs and probably didn't take enough insulin to cover it." This shows self-awareness and honesty about a mistake in his insulin management.
+Consistency (Truthfulness): Although not shown across different conversations in this limited example, the reported glucose levels are consistent with the described behaviors. A high fasting glucose of 185 mg/dL is a believable consequence of dietary indiscretions, and a post-meal level of 210 mg/dL aligns perfectly with his admission of miscalculating carbohydrates for his pasta dinner. A deceptive patient might report high numbers but fabricate a story of perfect adherence, creating an inconsistency.
+
+No "Gaming the System": John is not trying to present a perfect picture. His reported glucose levels are outside the ideal range, and he openly discusses his failures. This is the opposite of a patient who would "game the system" by reporting perfect numbers and flawless adherence to avoid judgment. His willingness to be vulnerable and share negative outcomes is a strong indicator of truthfulness.
+
+Engagement Level: The length and detail of John's messages are appropriate for someone genuinely seeking support. He provides enough context for his issues without being overly elaborate or suspiciously brief. For example, when asked about his evening, he gives a concise but complete answer about his dinner and insulin, indicating a desire to engage honestly with the chatbot to find a solution.

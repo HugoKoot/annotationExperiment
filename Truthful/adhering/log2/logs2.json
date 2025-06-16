@@ -1,0 +1,134 @@
+[
+    {
+      "patient_name": "John",
+      "timestamp": "20250616_214501",
+      "messages": [
+        {
+          "message": "Good morning. I wanted to log my fasting glucose level from this morning.",
+          "user": {
+            "name": "John",
+            "human": true
+          },
+          "timestamp": "2025-06-16T19:45:01.112Z"
+        },
+        {
+          "message": "Good morning, John! I'm here to help. What was your reading?",
+          "user": {
+            "name": "Bot",
+            "human": false
+          },
+          "timestamp": "2025-06-16T19:45:01.845Z"
+        },
+        {
+          "message": "It was 95 mg/dL.",
+          "user": {
+            "name": "John",
+            "human": true
+          },
+          "timestamp": "2025-06-16T19:45:21.321Z"
+        },
+        {
+          "message": "Thank you for sharing, John. A fasting glucose of 95 mg/dL is generally within a healthy target range for many people with diabetes. How are you feeling about your management plan lately?",
+          "user": {
+            "name": "Bot",
+            "human": false
+          },
+          "timestamp": "2025-06-16T19:45:22.054Z"
+        },
+        {
+          "message": "Feeling pretty good. I've been sticking to the meal plan from the doctor. Last night for dinner I had grilled chicken breast, a cup of steamed broccoli, and half a cup of quinoa. It seems to be working well.",
+          "user": {
+            "name": "John",
+            "human": true
+          },
+          "timestamp": "2025-06-16T19:45:55.987Z"
+        },
+        {
+          "message": "That sounds like a delicious and well-balanced meal! Sticking to your meal plan is a fantastic step. Have you been able to fit in any physical activity?",
+          "user": {
+            "name": "Bot",
+            "human": false
+          },
+          "timestamp": "2025-06-16T19:45:56.711Z"
+        },
+        {
+          "message": "Yes, I went for a 30-minute walk after dinner yesterday evening. I'm trying to do that every day.",
+          "user": {
+            "name": "John",
+            "human": true
+          },
+          "timestamp": "2025-06-16T19:46:15.432Z"
+        },
+        {
+          "message": "That's excellent! Consistency with exercise can make a big difference. It sounds like you're doing a great job. Is there anything you'd like advice on today?",
+          "user": {
+            "name": "Bot",
+            "human": false
+          },
+          "timestamp": "2025-06-16T19:46:16.105Z"
+        },
+        {
+          "message": "No, I think I'm okay for now. Just wanted to log my numbers and progress. Thanks.",
+          "user": {
+            "name": "John",
+            "human": true
+          },
+          "timestamp": "2025-06-16T19:46:28.888Z"
+        }
+      ]
+    },
+    {
+      "patient_name": "John",
+      "timestamp": "20250618_183015",
+      "messages": [
+        {
+          "message": "Hi, checking in. My post-lunch glucose was 135 mg/dL about two hours after eating.",
+          "user": {
+            "name": "John",
+            "human": true
+          },
+          "timestamp": "2025-06-18T16:30:15.543Z"
+        },
+        {
+          "message": "Hello John, thanks for logging your level. A reading of 135 mg/dL two hours after a meal is often a good target. What did you have for lunch today?",
+          "user": {
+            "name": "Bot",
+            "human": false
+          },
+          "timestamp": "2025-06-18T16:30:16.213Z"
+        },
+        {
+          "message": "I had a salad with mixed greens, cucumber, tomatoes, and some grilled salmon. The dressing was just olive oil and lemon juice. I also had a small whole-wheat roll.",
+          "user": {
+            "name": "John",
+            "human": true
+          },
+          "timestamp": "2025-06-18T16:30:49.876Z"
+        },
+        {
+          "message": "That sounds like a very healthy choice, John. It aligns well with typical dietary recommendations. How has your energy been today?",
+          "user": {
+            "name": "Bot",
+            "human": false
+          },
+          "timestamp": "2025-06-18T16:30:50.621Z"
+        },
+        {
+          "message": "Energy has been stable. The walks are helping, I don't feel that afternoon slump as much anymore. I'm taking my insulin exactly as prescribed, 10 units of Lantus in the evening.",
+          "user": {
+            "name": "John",
+            "human": true
+          },
+          "timestamp": "2025-06-18T16:31:12.111Z"
+        },
+        {
+          "message": "It's wonderful to hear that you're feeling more energetic and are consistent with your insulin routine. It sounds like your efforts are paying off. Keep up the fantastic work!",
+          "user": {
+            "name": "Bot",
+            "human": false
+          },
+          "timestamp": "2025-06-18T16:31:12.899Z"
+        }
+      ]
+    }
+  ]

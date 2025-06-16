@@ -1,0 +1,18 @@
+Key Indicators Used for (Deceptive, Non-Adhering)
+Inconsistencies:
+
+Chat 1 vs. Chat 2 & 3: In the first chat, John claims a "model week" with "perfect" fasting levels "always between 90 and 100 mg/dL." This is contradicted in the following weeks when he reports high readings of 185 mg/dL and 210 mg/dL. While some fluctuation is normal, the drastic change from "perfect" to significantly elevated levels suggests the initial report was an exaggeration.
+Chat 2: John claims his dinner the previous night was "just a salad," yet his morning blood sugar is 185 mg/dL. While other factors can influence this, it's a common deceptive tactic to downplay recent food intake when faced with a high reading. This contradicts his earlier claim of being "very careful" with his diet.
+Chat 1 vs. Chat 3: In the first chat, John claims to eat "all the right things, lots of salads and lean protein." In the third chat, he admits to having "pizza one night with friends" and "a bit more carbs than I should have," which contradicts his earlier portrayal of perfect adherence.
+Vague or Evasive Language:
+
+Hedging: In the first chat, John uses "I think I've been very compliant," which introduces a degree of uncertainty. In the third chat, he says his diet was "okay, I guess" and "I maybe had a bit more carbs," which are vague and non-committal statements.
+Generalizing: In the first chat, "Everyone should be as dedicated as I am" is a broad, self-praising statement that avoids specifics. In the third chat, "Everyone eats pizza, it's normal" is used to justify a non-adherent choice.
+Evasiveness: In the second chat, when asked about his insulin level after cake, he says, "I didn't check it right after. I'm sure it was fine though." This is a direct evasion. He then deflects blame for the high morning reading onto a potentially faulty meter ("I think my meter might need new batteries").
+Gaming the System:
+
+The first chat is a prime example of gaming the system. John's self-report is almost too perfect: "really good week," "very compliant," "walking every single day," "perfect" insulin levels in a very narrow, ideal range. This aligns with the concept of "ceiling effects" where patients over-report adherence to present themselves in the best possible light. The claim of "always" being in a specific range is a strong indicator.
+In the second chat, after admitting to eating cake, he immediately follows up with how he "made sure to take extra insulin to cover it," which is a way of showing he is a responsible patient, even when deviating from the plan.
+Engagement Level:
+
+John's initial messages are quite detailed and long as he crafts a narrative of perfect adherence ("It's been a really good week. I think I've been very compliant..."). As his reported numbers worsen and his non-adherence becomes more difficult to conceal, his answers become shorter and less enthusiastic (e.g., "It was fine. Diet was okay, I guess," and the final one-word answer, "I suppose so"). This shift in engagement, from elaborate storytelling to disengagement, signals his potential deception and frustration.

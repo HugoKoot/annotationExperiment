@@ -1,0 +1,167 @@
+[
+  {
+    "patient_name": "John",
+    "timestamp": "20250602_091512",
+    "category": "truthful, non-adhering",
+    "messages": [
+      {
+        "message": "Good morning. I need to log my levels from this morning.",
+        "user": {
+          "name": "John",
+          "human": true
+        },
+        "timestamp": "2025-06-02T09:15:12.112Z"
+      },
+      {
+        "message": "Good morning, John! I'm here to help. Go ahead and log your glucose reading.",
+        "user": {
+          "name": "Bot",
+          "human": false
+        },
+        "timestamp": "2025-06-02T09:15:12.543Z"
+      },
+      {
+        "message": "It was 185 mg/dL before breakfast.",
+        "user": {
+          "name": "John",
+          "human": true
+        },
+        "timestamp": "2025-06-02T09:15:45.321Z"
+      },
+      {
+        "message": "Thank you for logging your level, John. A fasting level of 185 mg/dL is higher than the target range. How have things been going with your diet and exercise lately?",
+        "user": {
+          "name": "Bot",
+          "human": false
+        },
+        "timestamp": "2025-06-02T09:15:45.890Z"
+      },
+      {
+        "message": "Not great, to be honest. I went to a birthday party on Saturday and had a big piece of cake and some pizza. I felt bad about it and haven't really gotten back on track since.",
+        "user": {
+          "name": "John",
+          "human": true
+        },
+        "timestamp": "2025-06-02T09:16:21.987Z"
+      },
+      {
+        "message": "It's completely understandable that social events can make it challenging to stick to the plan. The important thing is to get back to your routine. What's one small step you could take today to get back on track? Maybe a healthy breakfast or a short walk?",
+        "user": {
+          "name": "Bot",
+          "human": false
+        },
+        "timestamp": "2025-06-02T09:16:22.456Z"
+      }
+    ]
+  },
+  {
+    "patient_name": "John",
+    "timestamp": "20250605_183055",
+    "category": "truthful, non-adhering",
+    "messages": [
+      {
+        "message": "Feeling a bit frustrated today.",
+        "user": {
+          "name": "John",
+          "human": true
+        },
+        "timestamp": "2025-06-05T18:30:55.678Z"
+      },
+      {
+        "message": "I'm sorry to hear that, John. What's been on your mind?",
+        "user": {
+          "name": "Bot",
+          "human": false
+        },
+        "timestamp": "2025-06-05T18:30:56.123Z"
+      },
+      {
+        "message": "It's my exercise routine. Or lack thereof. I'm supposed to walk for 30 minutes every day, but with work and the kids, I'm just too tired by the end of the day. I've only managed it once this week.",
+        "user": {
+          "name": "John",
+          "human": true
+        },
+        "timestamp": "2025-06-05T18:31:34.456Z"
+      },
+      {
+        "message": "That sounds like a very busy schedule, and it's tough to fit everything in. It's great that you managed to go for a walk once this week already. Some people find that breaking up the 30 minutes into smaller chunks, like three 10-minute walks, can feel more manageable. Is that something that might work for you?",
+        "user": {
+          "name": "Bot",
+          "human": false
+        },
+        "timestamp": "2025-06-05T18:31:34.999Z"
+      },
+      {
+        "message": "Maybe. I hadn't thought of that. I could try walking during my lunch break.",
+        "user": {
+          "name": "John",
+          "human": true
+        },
+        "timestamp": "2025-06-05T18:32:05.111Z"
+      },
+      {
+        "message": "That's a great idea! Trying it out is a wonderful next step. Don't forget to celebrate the small victories. Every step counts!",
+        "user": {
+          "name": "Bot",
+          "human": false
+        },
+        "timestamp": "2025-06-05T18:32:05.522Z"
+      }
+    ]
+  },
+  {
+    "patient_name": "John",
+    "timestamp": "20250609_210519",
+    "category": "truthful, non-adhering",
+    "messages": [
+      {
+        "message": "Hi, I just checked my sugar before bed and it's 210 mg/dL.",
+        "user": {
+          "name": "John",
+          "human": true
+        },
+        "timestamp": "2025-06-09T21:05:19.876Z"
+      },
+      {
+        "message": "Hi John. Thanks for logging that. A reading of 210 mg/dL is elevated. Can you tell me a little bit about your evening? What did you have for dinner?",
+        "user": {
+          "name": "Bot",
+          "human": false
+        },
+        "timestamp": "2025-06-09T21:05:20.234Z"
+      },
+      {
+        "message": "I had pasta with red sauce. I think I misjudged the carbs and probably didn't take enough insulin to cover it. I sometimes get confused with the dosing when I eat things I don't have often.",
+        "user": {
+          "name": "John",
+          "human": true
+        },
+        "timestamp": "2025-06-09T21:05:58.543Z"
+      },
+      {
+        "message": "Carb counting for new foods can definitely be tricky. It's a common challenge. It might be helpful to keep a small food journal for a while to track these less frequent meals and your corresponding insulin doses and glucose levels. This can help you see patterns and make more confident decisions over time. Have you considered discussing this with your doctor or a dietitian for more personalized guidance?",
+        "user": {
+          "name": "Bot",
+          "human": false
+        },
+        "timestamp": "2025-06-09T21:05:59.012Z"
+      },
+      {
+        "message": "Yeah, that's a good point. I should probably make an appointment. For now, should I take a correction dose?",
+        "user": {
+          "name": "John",
+          "human": true
+        },
+        "timestamp": "2025-06-09T21:06:25.789Z"
+      },
+      {
+        "message": "As a reminder, I cannot give medical advice or tell you to take a specific dose of insulin. It's very important that you follow the correction scale and instructions provided by your doctor for a high blood sugar reading. Please refer to your personal care plan.",
+        "user": {
+          "name": "Bot",
+          "human": false
+        },
+        "timestamp": "2025-06-09T21:06:26.113Z"
+      }
+    ]
+  }
+]

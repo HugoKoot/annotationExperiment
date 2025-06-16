@@ -1,0 +1,17 @@
+Analysis of Deceptive Indicators
+This series of chatlogs places Laura in the (Deceitful, Adhering) category. Her baseline adherence is high, and her insulin levels are generally good. Her deception is not a constant pattern but a situational reaction to a specific failure, driven by a desire to avoid judgment for that single event.
+
+The following indicators are present:
+
+Generally Good Adherence:
+
+Chatlog 1 (20250609_110515): Laura establishes a strong baseline of adherence, reporting excellent fasting levels ("below 6.0 mmol/L") and mentioning her specific, successful strategies like walking and having a "golden rule" about avoiding certain foods. This shows she is actively and successfully managing her condition.
+Avoidance and Evasive Language (The "Little Lie"):
+
+Chatlog 2 (20250616_175520): When confronted with a poor reading (12.1 mmol/L), Laura avoids taking direct responsibility. Instead of admitting what she ate, she deflects blame onto an external, uncontrollable factor. Her statement, "Maybe the sauce had hidden sugar in it?" is a classic example of evasive language. It creates a plausible excuse that paints her as a victim of circumstance rather than someone who knowingly broke her own "golden rule."
+Inconsistencies:
+
+The primary contradiction spans all three logs.
+In Chatlog 1, she establishes her "golden rule" is to be "super strict about avoiding greasy or fried foods."
+In Chatlog 2, she lies by omission, claiming she had healthy "baked fish and roasted vegetables" and blaming the sauce for her high reading.
+In Chatlog 3, she reveals the truth: "I shared a side of onion rings with my sister." Onion rings are a fried food, which directly contradicts both her "golden rule" from the first chat and her story about the healthy meal in the second chat. This delayed admission clearly exposes her earlier deception.
