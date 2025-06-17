@@ -23,6 +23,7 @@ export default function HomePage() {
   const [summaryContent, setSummaryContent] = useState<SummaryData | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
+  const [annotations, setAnnotations] = useState<Annotation[]>([]);
 
   // Annotation form and timer state
   const [selectedDeception, setSelectedDeception] = useState<'truthful' | 'deceitful' | null>(null);
@@ -154,30 +155,30 @@ export default function HomePage() {
         indicators: selectedIndicators,
         timeToAnnotateInSeconds,
     };
-
-    setIsLoading(true);
-    try {
-        const response = await fetch('/api/annotate', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(annotation),
-        });
-
-        if (!response.ok) throw new Error('Failed to save annotation.');
-
-        // Reset for next log
-        setCurrentLog(null);
-        setSelectedDeception(null);
-        setSelectedAdherence(null);
-        setSelectedIndicators([]);
-        setError(null);
-
-    } catch (err) {
-        setError(err instanceof Error ? err.message : 'Could not submit annotation.');
-        setIsLoading(false); 
-    }
+    
+    setAnnotations(prev => [...prev, annotation]);
+    
+    // Reset for next log
+    setCurrentLog(null);
+    setSelectedDeception(null);
+    setSelectedAdherence(null);
+    setSelectedIndicators([]);
+    setError(null);
   };
   
+  const downloadAnnotations = () => {
+    const content = annotations.map((ann) => JSON.stringify(ann)).join('\n');
+    const blob = new Blob([content], { type: 'application/jsonl' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `annotations-${annotatorName.trim().replace(/\s+/g, '_')}.jsonl`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  };
+
   const isSubmitDisabled = !selectedDeception || !selectedAdherence || isLoading;
 
   // RENDER LOGIC
@@ -315,7 +316,13 @@ export default function HomePage() {
     return (
         <div className="min-h-screen bg-gray-900 text-white flex flex-col items-center justify-center p-8">
             <h1 className="text-4xl font-bold mb-4">Annotation Complete!</h1>
-            <p className="text-lg text-gray-400">Thank you for your participation, {annotatorName}.</p>
+            <p className="text-lg text-gray-400 mb-8">Thank you for your participation, {annotatorName}.</p>
+            <button
+              onClick={downloadAnnotations}
+              className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-md text-lg"
+            >
+              Download Your Annotations
+            </button>
         </div>
     );
   }
