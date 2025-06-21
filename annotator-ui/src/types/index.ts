@@ -29,7 +29,7 @@ export interface SummaryData {
 
 export interface Annotation {
   logId: string;
-  annotatorName: string;
+  annotatorId: number;
   annotatorGroup: 'group1' | 'group2';
   condition: 'log-only' | 'log-with-summary'; // The actual condition for this trial
   deception: 'truthful' | 'deceitful';

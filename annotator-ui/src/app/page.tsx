@@ -13,7 +13,7 @@ const INDICATORS = [
 export default function HomePage() {
   // App state
   const [appState, setAppState] = useState<'guidelines' | 'setup' | 'annotating' | 'finished'>('guidelines');
-  const [annotatorName, setAnnotatorName] = useState<string>('');
+  const [annotatorId, setAnnotatorId] = useState<number | null>(null);
   const [annotatorGroup, setAnnotatorGroup] = useState<'group1' | 'group2' | null>(null);
   
   // Data and loading state
@@ -118,8 +118,8 @@ export default function HomePage() {
   }, [currentLog, shouldShowSummary]);
 
   const handleStartExperiment = () => {
-    if (!annotatorName.trim() || !annotatorGroup) {
-      alert('Please enter your name and select a group.');
+    if (annotatorId === null || !annotatorGroup) {
+      alert('Please enter your annotator ID and select a group.');
       return;
     }
     setAppState('annotating');
@@ -138,7 +138,7 @@ export default function HomePage() {
   };
 
   const handleSubmit = async () => {
-    if (!currentLog || !selectedDeception || !selectedAdherence || !annotatorGroup || !timerStartTime) {
+    if (!currentLog || !selectedDeception || !selectedAdherence || !annotatorGroup || !timerStartTime || annotatorId === null) {
         alert("Please complete all fields before submitting.");
         return;
     }
@@ -147,7 +147,7 @@ export default function HomePage() {
     
     const annotation: Annotation = {
         logId: currentLog.id,
-        annotatorName,
+        annotatorId,
         annotatorGroup,
         condition: shouldShowSummary ? 'log-with-summary' : 'log-only',
         deception: selectedDeception,
@@ -172,7 +172,7 @@ export default function HomePage() {
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `annotations-${annotatorName.trim().replace(/\s+/g, '_')}.jsonl`;
+    a.download = `annotations-${annotatorId}.jsonl`;
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
@@ -223,7 +223,7 @@ export default function HomePage() {
                 </div>
                 <div className="bg-gray-700 p-4 rounded-lg">
                   <h3 className="text-lg font-bold text-cyan-400">Engagement Level</h3>
-                  <p className="text-gray-300 mt-1">Patients levels of engagement, meaning how short or long the answers are. Can signal deception or non-adherence, depending on context. Research suggests that in asynchronous text chat contexts similar to the patient bot interactions in the CHIP system, deceivers often produce longer and more elaborate messages, as they have more time to craft convincing stories, thereby converting their deception cues into richer, more detailed text. While very short answers might indicate the patients disengaging from the CHIP system overall.</p>
+                  <p className="text-gray-300 mt-1">Patients levels of engagement, meaning how short or long the answers are. Can signal deception or non-adherence, depending on context. Research suggests that in asynchronous text chat contexts similar to the patient bot interactions in the CHIP system, deceivers often produce longer and more elaborate messages, as they have more time to craft convincing stories, thereby converting their deception cues into richer, more detailed text.</p>
                 </div>
                 <div className="bg-gray-700 p-4 rounded-lg">
                   <h3 className="text-lg font-bold text-cyan-400">Gaming the System</h3>
@@ -282,14 +282,17 @@ export default function HomePage() {
           <h1 className="text-3xl font-bold text-cyan-400 mb-6">Annotation Experiment Setup</h1>
           <div className="space-y-6">
             <div>
-              <label htmlFor="annotatorName" className="block text-sm font-medium text-gray-300 mb-2">Your Name</label>
+              <label htmlFor="annotatorId" className="block text-sm font-medium text-gray-300 mb-2">Your Annotator ID</label>
               <input
-                type="text"
-                id="annotatorName"
-                value={annotatorName}
-                onChange={e => setAnnotatorName(e.target.value)}
+                type="number"
+                id="annotatorId"
+                value={annotatorId === null ? '' : annotatorId}
+                onChange={e => {
+                  const value = e.target.value;
+                  setAnnotatorId(value === '' ? null : parseInt(value, 10));
+                }}
                 className="w-full bg-gray-700 border border-gray-600 rounded-md px-3 py-2 text-white focus:ring-cyan-500 focus:border-cyan-500"
-                placeholder="Enter your name"
+                placeholder="Enter your ID"
               />
             </div>
             <div>
@@ -301,7 +304,7 @@ export default function HomePage() {
             </div>
             <button
               onClick={handleStartExperiment}
-              disabled={!annotatorName.trim() || !annotatorGroup || isLoading}
+              disabled={annotatorId === null || !annotatorGroup || isLoading}
               className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 rounded-md disabled:bg-gray-500 disabled:cursor-not-allowed"
             >
               {isLoading ? 'Loading...' : 'Start Annotation'}
@@ -316,7 +319,7 @@ export default function HomePage() {
     return (
         <div className="min-h-screen bg-gray-900 text-white flex flex-col items-center justify-center p-8">
             <h1 className="text-4xl font-bold mb-4">Annotation Complete!</h1>
-            <p className="text-lg text-gray-400 mb-8">Thank you for your participation, {annotatorName}.</p>
+            <p className="text-lg text-gray-400 mb-8">Thank you for your participation, Annotator {annotatorId}.</p>
             <button
               onClick={downloadAnnotations}
               className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-md text-lg"
@@ -460,7 +463,7 @@ export default function HomePage() {
           <h1 className="text-4xl font-bold text-cyan-400">Annotation Task</h1>
           <p className="text-gray-400">{logQueue.length} logs remaining</p>
           <p className="text-sm text-yellow-400 mt-1">
-            Annotator: {annotatorName} (Group: {annotatorGroup}) | Condition: {shouldShowSummary ? 'Log + AI Summary' : 'Log Only'}
+            Annotator ID: {annotatorId} (Group: {annotatorGroup}) | Condition: {shouldShowSummary ? 'Log + AI Summary' : 'Log Only'}
           </p>
         </header>
 
