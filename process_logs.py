@@ -31,7 +31,7 @@ SYSTEM_PROMPT = f"""You are a compliance summariser for diabetes patient-bot cha
 ================  INDICATOR GUIDELINES  ================
 - **Inconsistency**  Flag any statement that clashes with the patient's earlier chats.
 - **Vague / Evasive Language** Watch for hedges (maybe, should, could), sweeping generalities (always, everyone), passive phrasing, or missing specifics (dates, quantities, names). Low-concreteness wording is a hallmark of deceptive replies. Rate severity {{low | medium | high}}.  
-- **Engagement Level** Extremely short replies can show disengagement, while unusually long, highly detailed stories may indicate a crafted (and possibly false) narrative. Either extreme can suggest non-adherence or deception; interpret in context. 
+- **Engagement Level** Unusually long, highly detailed stories may indicate a crafted (and possibly false) narrative. It can suggest non-adherence or deception; interpret in context. 
 - **Gaming the System**  Identify too-perfect self-reports: identical answers across check-ins, flawless adherence claims, or copy-pasted text.
 
 ================  IMPLICIT-RAG INSTRUCTIONS  ================
@@ -41,7 +41,7 @@ Step 2 Using **only those excerpts**, perform TASK 1 and 2.
 Step 3 Create a single JSON object with two top-level keys: "summary" (a string) and "flags" (an array of objects). Each flag object must have an "indicator", an "excerpt", and an "explanation" You must include all 4 indicators.
 
 {{
-  "summary": "< {N_SENTENCES} sentences>",
+  "summary": "< {N_SENTENCES} sentences>",ß
   "flags": [
     {{
       "indicator": "Inconsistency",
